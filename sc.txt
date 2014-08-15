@@ -1,0 +1,173 @@
+title:      System and Communications Protection
+next_url:   pm.html
+next_title: Program Management
+prev_title: Audit & Accountability
+prev_url:   au.html
+
+# SYSTEM AND COMMUNICATIONS PROTECTION 
+
+SC-2 Application Partitioning
+-----------------------------
+
+**Control:** The information system separates user functionality (including user interface services) from information system management functionality.
+
+**Supplemental Guidance** 
+
+: Information system management functionality includes, for example, functions necessary to administer databases, network components, workstations, or servers, and typically requires privileged user access. The separation of user functionality from information system management functionality is either physical or logical. Organizations implement separation of system management-related functionality from user functionality by using different computers, different central processing units, different instances of operating systems, different network addresses, virtualization techniques, or combinations of these or other methods, as appropriate. This type of separation includes, for example, web administrative interfaces that use separate authentication methods for users of any other information system resources. Separation of system and user functionality may include isolating administrative interfaces on different domains and with additional access controls. 
+
+**Related controls** 
+
+: SA-4, SA-8, SC-3.
+
+SC-4 Information In Shared Resources 
+------------------------------------
+
+**Control:** The information system prevents unauthorized and unintended information transfer via shared system resources.
+
+**Supplemental Guidance** 
+
+: This control prevents information, including encrypted representations of information, produced by the actions of prior users/roles (or the actions of processes acting on behalf of prior users/roles) from being available to any current users/roles (or current processes) that obtain access to shared system resources (e.g., registers, main memory, hard disks) after those resources have been released back to information systems. The control of information in shared resources is also commonly referred to as object reuse and residual information protection. This control does not address: (i) information remanence which refers to residual representation of data that has been nominally erased or removed; (ii) covert channels (including storage and/or timing channels) where shared resources are manipulated to violate information flow restrictions; or (iii) components within information systems for which there are only single users/roles. 
+
+**Related controls** 
+
+: [AC-3], [AC-4], [MP-6].
+
+SC-7 Boundary Protection
+------------------------
+
+**Control:** The information system:
+
+a. Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system;
+
+b. Implements subnetworks for publicly accessible system components that are <span id="highlight"><script>document.write(cdc.sc7b);</script></span>. separated from internal organizational networks; and
+
+c. Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.
+
+**Supplemental Guidance** 
+
+: Managed interfaces include, for example, gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational information systems includes, for example, restricting external web traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses. Organizations consider the shared nature of commercial telecommunications services in the implementation of security controls associated with the use of such services. Commercial telecommunications services are commonly based on network components and consolidated management systems shared by all attached commercial customers, and may also include third party-provided access lines and other service elements. Such transmission services may represent sources of increased risk despite contract security provisions. 
+
+**Related controls** 
+
+: [AC-4], [AC-17], CA-3, [CM-7], CP-8, [IR-4], RA-3, SC-5, [SC-13].
+
+SC-8 Transmission Confidentiality And Integrity 
+-----------------------------------------------
+
+**Control:** The information system protects the <span id="highlight"><script>document.write(cdc.sc8);</script></span>. of transmitted information.
+
+**Supplemental Guidance** 
+
+: This control applies to both internal and external networks and all types of information system components from which information can be transmitted (e.g., servers, mobile devices, notebook computers, printers, copiers, scanners, facsimile machines). Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and/or integrity of organizational information can be accomplished by physical means (e.g., by employing protected distribution systems) or by logical means (e.g., employing encryption techniques). Organizations relying on commercial providers offering transmission services as commodity services rather than as fully dedicated services (i.e., services which can be highly specialized to individual customer needs), may find it difficult to obtain the necessary assurances regarding the implementation of needed security controls for transmission confidentiality/integrity. In such situations, organizations determine what types of confidentiality/integrity services are available in standard, commercial telecommunication service packages. If it is infeasible or impractical to obtain the necessary security controls and assurances of control effectiveness through appropriate contracting vehicles, organizations implement appropriate compensating security controls or explicitly accept the additional risk. 
+
+**Related controls** 
+
+: [AC-17], PE-4.
+
+
+SC-8(1) Transmission Confidentiality And Integrity 
+--------------------------------------------------
+
+**Cryptographic or Alternate Physical Protection**
+
+The information system implements cryptographic mechanisms to <span id="highlight"><script>document.write(cdc.sc81x1);</script></span> during transmission unless otherwise protected by <span id="highlight"><script>document.write(cdc.sc81x2);</script></span>.
+
+**Supplemental Guidance** 
+
+: Encrypting information for transmission protects information from unauthorized disclosure and modification. Cryptographic mechanisms implemented to protect information integrity include, for example, cryptographic hash functions which have common application in digital signatures, checksums, and message authentication codes. Alternative physical security safeguards include, for example, protected distribution systems. 
+
+**Related control** 
+
+: [SC-13].
+
+SC-13 Cryptographic Protection 
+------------------------------
+
+**Control:** The information system implements <span id="highlight"><script>document.write(cdc.sc13);</script></span> in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.
+
+**Supplemental Guidance** 
+
+: Cryptography can be employed to support a variety of security solutions including, for example, the protection of classified and Controlled Unclassified Information, the provision of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances for such information but lack the necessary formal access approvals. Cryptography can also be used to support random number generation and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. This control does not impose any requirements on organizations to use cryptography. However, if cryptography is required based on the selection of other security controls, organizations define each type of cryptographic use and the type of cryptography required (e.g., protection of classified information: NSA-approved cryptography; provision of digital signatures: FIPS-validated cryptography). 
+
+**Related controls** 
+
+: [AC-2], [AC-3], [AC-7], [AC-17], [AC-18], [AU-9], AU-10, CM-11, [CP-9], IA-3, IA-7, [MA-4], MP-2, [MP-4], MP-5, SA-4, [SC-8], SC-12, [SC-28], SI-7.
+
+SC-15 Collaborative Computing Devices
+-------------------------------------
+
+**Control:** The information system:
+
+a. Prohibits remote activation of collaborative computing devices with the following exceptions: <span id="highlight"><script>document.write(cdc.sc15a);</script></span>; and
+
+b. Provides an explicit indication of use to users physically present at the devices.
+Supplemental Guidance: Collaborative computing devices include, for example, networked white boards, cameras, and microphones. Explicit indication of use includes, for example, signals to users when collaborative computing devices are activated. 
+
+**Related control** 
+
+: AC-21.
+
+SC-28 Protection of Information at Rest
+---------------------------------------
+
+**Control:** The information system protects the <span id="highlight"><script>document.write(cdc.sc28);</script></span>.
+
+**Supplemental Guidance** 
+
+: This control addresses the confidentiality and integrity of information at rest and covers user information and system information. Information at rest refers to the state of information when it is located on storage devices as specific components of information systems. System-related information requiring protection includes, for example, configurations or rule sets for firewalls, gateways, intrusion detection/prevention systems, filtering routers, and authenticator content. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing Write-Once-Read-Many (WORM) technologies. Organizations may also employ other security controls including, for example, secure off-line storage in lieu of online storage when adequate protection of information at rest cannot otherwise be achieved and/or continuous monitoring to identify malicious code at rest. 
+
+**Related controls** 
+
+: [AC-3], [AC-6], CA-7, CM-3, CM-5, [CM-6], [PE-3], [SC-8], [SC-13], [SI-3], SI-7.
+
+[AC-2]:ac.html#ac-2-account-management
+[AC-3]:ac.html#ac-3-access-enforcement
+[AC-4]:ac.html#ac-4-information-flow
+[AC-6]:ac.html#ac-6-least-privilege
+[AC-7]:ac.html#ac-7-unsuccessful-logon-attempts
+[AC-11]:ac.html#ac-11-session-lock
+[AC-17]:ac.html#ac-17-remote-access
+[AC-18]:ac.html#ac-18-wireless-access
+[AC-19]:ac.html#ac-19-access-control-for-mobile-devices
+[AC-20]:ac.html#ac-20-use-of-external-information-systems
+[AC-22]:ac.html#ac-22-publicly-accessible-content	
+[AT-2]:at.html#security-awareness-training
+[AU-2]:au.html#au-2-audits-events
+[AU-3]:au.html#au-3-content-of-audit-records
+[AU-6]:au.html#au-6-1-audit-review-analysis-and-reporting
+[AU-7]:au.html#au-7-audit-reduction-and-report-generation
+[AU-8]:au.html#au-8-time-stamps
+[AU-9]:au.html#au-9-protection-of-audit-information
+[CM-2]:cm.html#cm-2-baseline-configuration
+[CM-6]:cm.html#cm-6-configuration-settings
+[CM-7]:cm.html#cm-7-least-functionality
+[CM-8]:cm.html#cm-8-information-system-component-inventory
+[CP-9]:cp.html#cp-9-information-system-backup
+[IA-2]:ia.html#identification-and-authentication
+[IA-4]:ia.html#ia-4-identifier-management
+[IA-5]:ia.html#ia-5-authenticator-management
+[IR-2]:ir.html#ir-2-incident-response-training
+[IR-4]:ir.html#ir-4-incident-handling
+[IR-5]:ir.html#ir-5-incident-monitoring
+[IR-6]:ir.html#ir-6-incident-reporting
+[MA-4]:ma.html#maintenance
+[MA-5]:ma.html#ma-5-maintenance-personnel
+[MA-6]:ma.html#ma-6-timely-maintenance
+[MP-4]:mp.html#mp-4-media-storage
+[MP-6]:mp.html#mp-6-media-sanitization
+[PE-2]:pe.html#pe-2-physical-access-authorizations
+[PE-3]:pe.html#pe-3-physical-access-control
+[PE-5]:pe.html#pe-5-access-control-for-output-devices
+[PM-10]:pm.html#pm-10-security-authorization-process
+[RA-5]:ra.html#ra-5-vulnerability-scanning
+[SC-2]:sc.html#sc-2-application-partitioning
+[SC-4]:sc.html#sc-4-information-in-shared-resources
+[SC-7]:sc.html#sc-7-boundary-protection
+[SC-8]:sc.html#sc-8-transmission-confidentiality-and-integrity
+[SC-13]:sc.html#sc-13-cryptographic-protection
+[SC-15]:sc.html#sc-15-collaborative-computing-devices
+[SC-28]:sc.html#sc-28-protection-of-information-at-rest
+[SI-2]:si.html#si-2-flaw-remediation
+[SI-3]:si.html#si-3-malicious-code-protection
+[SI-4]:si.html#si-4-information-system-monitoring
+<div style="page-break-after:always;"></div>

@@ -1,0 +1,29 @@
+title:      Scripsit
+prev_title: Home
+prev_url:   index.html
+next_title: Security Plan
+next_url:   sp_index.html
+
+Scripsit
+========
+<div style="float:right;">
+<img src="is3_solutions.png">
+</div>
+
+**Scripsit** (`skrip'sit`) Latin He (or she) wrote (it).
+
+ISSM Solutions Scripsit outlines the minimum required security controls for unclassified controlled technical information requiring safeguarding in accordance with DFARS 204.73. 
+
+Scripsit is a resource kit that is individually designed for the DoD contractor to assist in implementing  adequate security measures to safeguard unclassified controlled technical information and to prescribe reporting to DoD with regard to the compromise of unclassified controlled technical information resident on or transiting through the contractor unclassified information systems.
+
+---
+## Scroll
+
+<dl>
+<script>
+var i = 0
+    	for (i = 0; i < scripsit.blog.length; i++) {
+		document.write("<dt><a>" + (scripsit.blog[i].subject) + "</a></dt><dd><div style=\"text-align:center;margin-top: -1.5em;\">" + (scripsit.blog[i].date) + "</div><p>" + (scripsit.blog[i].body) + "</p><hr /></dd>");
+		}
+</script>
+</dl>
