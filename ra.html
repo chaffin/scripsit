@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Risk Assessment &#8212; ISSM Solutions</title>
+<link rel="stylesheet" href="default.css" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="cdc.json"></script>
+<script src="scripsit.json"></script>
+<script type="text/javascript"> 
+   $(document).ready(function () {
+   	$("dd").slideUp(0);
+   	$("dt").click(function () {
+   		$(this).next("dd").slideToggle("slow");
+   	});
+   	$(".expand").click(function () {
+   		$("dd").slideDown();
+   	});
+   		$(".closeall").click(function () {
+   			$("dd").slideUp();
+   		});
+	});
+</script> 
+</head>
+<body>
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="pe.html" title="Physical and Environmental Protection"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="pm.html" title="Program Management"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="ra.html">Risk Assessment</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+
+<div class="document">
+  <div class="documentwrapper">
+    <div class="bodywrapper">
+      <div class="body">
+<h1 id="risk-assessment">RISK ASSESSMENT<a class="headerlink" href="#risk-assessment" title="Permanent link">&para;</a></h1>
+<h2 id="ra-5-vulnerability-scanning">RA-5 Vulnerability SCANNING<a class="headerlink" href="#ra-5-vulnerability-scanning" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Scans for vulnerabilities in the information system and hosted applications <span id="highlight"><script>document.write(cdc.ra5a);</script></span> and when new vulnerabilities potentially affecting the system/applications are identified and reported;</p>
+<p>b. Employs vulnerability scanning tools and techniques that facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:</p>
+<ol>
+<li>
+<p>Enumerating platforms, software flaws, and improper configurations;</p>
+</li>
+<li>
+<p>Formatting checklists and test procedures; and</p>
+</li>
+<li>
+<p>Measuring vulnerability impact;</p>
+</li>
+</ol>
+<p>c. Analyzes vulnerability scan reports and results from security control assessments;</p>
+<p>d. Remediates legitimate vulnerabilities <span id="highlight"><script>document.write(cdc.ra5d);</script></span> in accordance with an organizational assessment of risk; and</p>
+<p>e. Shares information obtained from the vulnerability scanning process and security control assessments with <span id="highlight"><script>document.write(cdc.ra5e);</script></span> to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies).</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd>
+<p>Security categorization of information systems guides the frequency and comprehensiveness of vulnerability scans. Organizations determine the required vulnerability scanning for all information system components, ensuring that potential sources of vulnerabilities such as networked printers, scanners, and copiers are not overlooked. Vulnerability analyses for custom software applications may require additional approaches such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches.<br /><br /> Organizations can employ these analysis approaches in a variety of tools (e.g., web-based application scanners, static analysis tools, binary analyzers) and in source code reviews. Vulnerability scanning includes, for example: (i) scanning for patch levels; (ii) scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and (iii) scanning for improperly configured or incorrectly operating information flow control mechanisms.<br /><br />Organizations consider using tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that use the Open Vulnerability Assessment Language (OVAL) to determine/test for the presence of vulnerabilities. Suggested sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). In addition, security control assessments such as red team exercises provide other sources of potential vulnerabilities for which to scan. Organizations also consider using tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS). </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>CA-2, CA-7, CM-4, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, RA-2, RA-3, SA-11, <a href="si.html#si-2-flaw-remediation">SI-2</a>.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+      </div> <!-- .body -->
+    </div> <!-- .bodywrapper -->
+  </div> <!-- .documentwrapper -->
+
+  <div class="scripsitsidebar">
+    <div class="scripsitsidebarwrapper">
+<button class="expand">&#8711;</button>&nbsp;<button class="closeall">&#916;</button>
+    <h3><script>document.write(cdc.dba);</script></h3>
+    <ul class="this-page-menu">
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="sp_index.html">Security Plan</a></li>
+	  <li><a href="doc_index.html">Documentation</a></li>
+      <li><a href="scripsit.html">Scripsit</a></li>
+      <li><a href="ra.txt"
+             rel="nofollow">Show Source</a></li>
+    </ul>
+    <h3>Table Of Contents</h3>
+    <div class="toc">
+<ul>
+<li><a href="#risk-assessment">RISK ASSESSMENT</a><ul>
+<li><a href="#ra-5-vulnerability-scanning">RA-5 Vulnerability SCANNING</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    <h4>Previous topic</h4>
+      <p class="topless"><a href="pm.html"
+         title="previous chapter">Program Management</a></p>
+    <h4>Next topic</h4>
+      <p class="topless"><a href="pe.html"
+         title="next chapter">Physical and Environmental Protection</a></p>
+<div class="footer"><script>document.write(scripsit.copyright);</script></div>
+    </div> <!-- .scripsitsidebarwrapper -->
+  </div> <!-- .scripsitsidebar -->
+</div> <!-- .document -->
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="pe.html" title="Physical and Environmental Protection"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="pm.html" title="Program Management"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="ra.html">Risk Assessment</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+</body>
+</html>

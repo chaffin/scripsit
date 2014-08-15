@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Authorized Users &#8212; ISSM Solutions</title>
+<link rel="stylesheet" href="default.css" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="cdc.json"></script>
+<script src="scripsit.json"></script>
+<script type="text/javascript"> 
+   $(document).ready(function () {
+   	$("dd").slideUp(0);
+   	$("dt").click(function () {
+   		$(this).next("dd").slideToggle("slow");
+   	});
+   	$(".expand").click(function () {
+   		$("dd").slideDown();
+   	});
+   		$(".closeall").click(function () {
+   			$("dd").slideUp();
+   		});
+	});
+</script> 
+</head>
+<body>
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="sp_index.html" title="Security Plan"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="doc_index.html" title="Documentation"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="doc_ac-2.html">Authorized Users</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+
+<div class="document">
+  <div class="documentwrapper">
+    <div class="bodywrapper">
+      <div class="body">
+<h1 id="attachment-1">Attachment 1<a class="headerlink" href="#attachment-1" title="Permanent link">&para;</a></h1>
+<table><caption>Authorized Users</caption><tr><th>Authorized User</th><th>User Name</th><th>Group/Role Membership</th><th>Privileges</th></tr>
+<script>
+var i = 0
+        for (i = 0; i < cdc.account.length; i++) {
+        document.write("<tr><td>" + (cdc.account[i].owner) + "</td><td>" + (cdc.account[i].username) + "</td><td>" + (cdc.account[i].group) + "</td><td>" + (cdc.account[i].privilege));
+    }
+</script>
+</td></tr></table>
+      </div> <!-- .body -->
+    </div> <!-- .bodywrapper -->
+  </div> <!-- .documentwrapper -->
+
+  <div class="scripsitsidebar">
+    <div class="scripsitsidebarwrapper">
+<button class="expand">&#8711;</button>&nbsp;<button class="closeall">&#916;</button>
+    <h3><script>document.write(cdc.dba);</script></h3>
+    <ul class="this-page-menu">
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="sp_index.html">Security Plan</a></li>
+	  <li><a href="doc_index.html">Documentation</a></li>
+      <li><a href="scripsit.html">Scripsit</a></li>
+      <li><a href="doc_ac-2.txt"
+             rel="nofollow">Show Source</a></li>
+    </ul>
+    <h3>Table Of Contents</h3>
+    <div class="toc">
+<ul>
+<li><a href="#attachment-1">Attachment 1</a></li>
+</ul>
+</div>
+
+
+    <h4>Previous topic</h4>
+      <p class="topless"><a href="doc_index.html"
+         title="previous chapter">Documentation</a></p>
+    <h4>Next topic</h4>
+      <p class="topless"><a href="sp_index.html"
+         title="next chapter">Security Plan</a></p>
+<div class="footer"><script>document.write(scripsit.copyright);</script></div>
+    </div> <!-- .scripsitsidebarwrapper -->
+  </div> <!-- .scripsitsidebar -->
+</div> <!-- .document -->
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="sp_index.html" title="Security Plan"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="doc_index.html" title="Documentation"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="doc_ac-2.html">Authorized Users</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+</body>
+</html>

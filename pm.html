@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Program Management &#8212; ISSM Solutions</title>
+<link rel="stylesheet" href="default.css" type="text/css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="cdc.json"></script>
+<script src="scripsit.json"></script>
+<script type="text/javascript"> 
+   $(document).ready(function () {
+   	$("dd").slideUp(0);
+   	$("dt").click(function () {
+   		$(this).next("dd").slideToggle("slow");
+   	});
+   	$(".expand").click(function () {
+   		$("dd").slideDown();
+   	});
+   		$(".closeall").click(function () {
+   			$("dd").slideUp();
+   		});
+	});
+</script> 
+</head>
+<body>
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="ra.html" title="Risk Assessment"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="sc.html" title="System and Communications Protection"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="pm.html">Program Management</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+
+<div class="document">
+  <div class="documentwrapper">
+    <div class="bodywrapper">
+      <div class="body">
+<h1 id="program-management">PROGRAM MANAGEMENT<a class="headerlink" href="#program-management" title="Permanent link">&para;</a></h1>
+<h2 id="pm-10-security-authorization-process">PM-10 Security Authorization Process<a class="headerlink" href="#pm-10-security-authorization-process" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Manages (i.e., documents, tracks, and reports) the security state of organizational information systems and the environments in which those systems operate through security authorization processes;</p>
+<p>b. Designates individuals to fulfill specific roles and responsibilities within the organizational risk management process; and</p>
+<p>c. Fully integrates the security authorization processes into an organization-wide risk management program.</p>
+<table>
+<caption>Roles and Responsibilities</caption>
+<tr><th>Name</th><th>Title</th><th>Email</th><th>Phone</th><th>Responsibility</th>
+</tr>
+<script>
+var i = 0
+        for (i = 0; i < cdc.role.length; i++) {
+        document.write("<tr><td>" + (cdc.role[i].firstname) + "&nbsp;" + (cdc.role[i].lastname) + "</td><td>" + (cdc.role[i].title) + "</td><td>" + (cdc.role[i].email) + "</td><td>" + (cdc.role[i].office) + "</td><td>" + (cdc.role[i].responsible) + "</td></tr>");
+        }
+</script>
+</table>
+
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Security authorization processes for information systems and environments of operation require the implementation of an organization-wide risk management process, a Risk Management Framework, and associated security standards and guidelines. Specific roles within the risk management process include an organizational risk executive (function) and designated authorizing officials for each organizational information system and common control provider. Security authorization processes are integrated with organizational continuous monitoring processes to facilitate ongoing understanding and acceptance of risk to organizational operations and assets, individuals, other organizations, and the Nation. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p>CA-6</p>
+</dd>
+<dt><strong>References</strong> </dt>
+<dd>
+<p>NIST Special Publications 800-37, 800-39.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+      </div> <!-- .body -->
+    </div> <!-- .bodywrapper -->
+  </div> <!-- .documentwrapper -->
+
+  <div class="scripsitsidebar">
+    <div class="scripsitsidebarwrapper">
+<button class="expand">&#8711;</button>&nbsp;<button class="closeall">&#916;</button>
+    <h3><script>document.write(cdc.dba);</script></h3>
+    <ul class="this-page-menu">
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="sp_index.html">Security Plan</a></li>
+	  <li><a href="doc_index.html">Documentation</a></li>
+      <li><a href="scripsit.html">Scripsit</a></li>
+      <li><a href="pm.txt"
+             rel="nofollow">Show Source</a></li>
+    </ul>
+    <h3>Table Of Contents</h3>
+    <div class="toc">
+<ul>
+<li><a href="#program-management">PROGRAM MANAGEMENT</a><ul>
+<li><a href="#pm-10-security-authorization-process">PM-10 Security Authorization Process</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    <h4>Previous topic</h4>
+      <p class="topless"><a href="sc.html"
+         title="previous chapter">System and Communications Protection</a></p>
+    <h4>Next topic</h4>
+      <p class="topless"><a href="ra.html"
+         title="next chapter">Risk Assessment</a></p>
+<div class="footer"><script>document.write(scripsit.copyright);</script></div>
+    </div> <!-- .scripsitsidebarwrapper -->
+  </div> <!-- .scripsitsidebar -->
+</div> <!-- .document -->
+
+<div class="related">
+  <h3>Navigation</h3>
+  <ul>
+    <li class="right" style="margin-right: 10px">
+      <a href="siteindex.html" title="General Index">index</a></li>
+    <li class="right">
+      <a href="ra.html" title="Risk Assessment"
+         accesskey="N">next</a> |</li>
+    <li class="right">
+      <a href="sc.html" title="System and Communications Protection"
+         accesskey="P">previous</a> |</li>
+    <li><img src="py.png" alt=""
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="index.html">ISSM Solutions</a> &raquo;</li>
+    <li><a href="pm.html">Program Management</a> &raquo;</li>
+  </ul>
+</div> <!-- .related -->
+</body>
+</html>

@@ -12,7 +12,7 @@ background-color:#fff;
 margin-bottom:2em;
 }
 
-a,dl,div.scripsitsidebar,div.related,div.footer {
+a.headerlink,dl,div.scripsitsidebar,div.related,div.footer {
 display:none;
 }
 

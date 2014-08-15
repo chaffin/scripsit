@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var scripsit = {
+=======
+{
+>>>>>>> 256950e371ea6738bacb36d2a170225353a0e36f
   "copyright": "Copyright &copy; 2014 ISSM Solutions",
   "blog": [
     {
@@ -12,4 +16,8 @@ var scripsit = {
       "body": "This announcement is intended to provide awareness and information regarding Scripsit Support.  ISSM Solutions performs regularly scheduled maintenance.  Maintenance is required to ensure IAVA compliance and high system availability."
     }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 256950e371ea6738bacb36d2a170225353a0e36f
