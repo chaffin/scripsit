@@ -1,0 +1,31 @@
+title:       Scripsit
+author:      Larry Chaffin
+reviewer:    none
+status:      draft
+date:        2015-10-11
+
+## Descriptive
+Metadata files describe how, when, and by whom the set of data was collected.
+
+
+
+Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted.
+
+## Structural 
+How the data is formatted.
+ 
+
+
+```
+title:      Table of Contents
+author:     Larry Chaffin
+reviewer:    
+status:     draft
+date:       2015-10-26
+next_url:   pm.html
+next_title: Program Management
+prev_title: Home
+prev_url:   index.html
+```
+---
+

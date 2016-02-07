@@ -1,0 +1,312 @@
+/*
+ * default.css
+ * scripsit stylesheet
+ */
+@import url("fonts.css");h1,h2,h3,h4,h5,h6,caption,cui{font-family:kameron};
+/* ================================================== 
+   ------------- highlight JSON text ----------------
+   ================================================== */
+
+
+/* ================================================== 
+   ---- expand/contract javascript <dt> <dd> tags ---
+   ================================================== */
+dt {
+  cursor: pointer;
+  margin: 0 2rem 0;
+}
+dt:hover { color: #355f7c }
+dd {
+  font-family: kameron;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0 10%;
+  border:0;
+  border-bottom:1px solid #355f7c;
+  padding-bottom:0
+}
+/* ================================================== 
+   ------------------ page layout -------------------
+   ================================================== */
+div.document { background-color: #1c4e63 }
+div.documentwrapper {
+  float: left;
+  width: 100%;
+}
+div.bodywrapper { margin: 0 0 0 230px }
+div.body {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 20px 30px;
+}
+div.footer {
+    color: #ffffff;
+    width: 100%;
+    padding: 9px 0 9px 0;
+    text-align: left;
+    font-size: normal;
+    position: fixed;
+    left: 6px;
+    bottom: 0px;
+}
+div.related {
+    background-color: #133f52;
+    line-height: 30px;
+    color: #ffffff;
+}
+div.related a { color: #ffffff }
+div.scripsitsidebar { }
+div.scripsitsidebar h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+div.scripsitsidebar h4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+div.scripsitsidebar p { color: #ffffff }
+div.scripsitsidebar p.topless { margin: 5px 10px 10px 10px }
+div.scripsitsidebar ul {
+    margin: 10px;
+    padding: 0;
+    color: #ffffff;
+}
+div.scripsitsidebar a { color: #98dbcc }
+/* ================================================== 
+   ------------------- hyperlinks -------------------
+   ================================================== */
+a {
+    color: #355f7c;
+    text-decoration: none;
+}
+a:visited {
+    color: #355f7c;
+    text-decoration: none;
+}
+p > a:hover, dd > a:hover { 
+    text-decoration: underline 
+}
+a.meta:before { 
+    content: "\25ca";
+    padding-right:0.5rem;
+    color:red
+}
+a.meta:hover {
+    text-decoration: none
+}
+/* ================================================== 
+   ------------------ body style --------------------
+   ================================================== */
+h1, h2, h3, h4, h5, h6 { font-weight:400 }
+div.body h1,
+div.body h2 {
+    font-family: kameron, sans-serif;
+    color: #20435c;
+    margin: 20px -20px 10px -20px;
+    padding: 3px 0 3px 10px;
+}
+div.body h1 {
+    margin-top: 0;
+    font-size: 200%;
+}
+div.body h2 { font-size: 160% }
+div.body h6 { display:none; }
+a.headerlink {
+    color: #c60f0f;
+    font-size: 0.8rem;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+a.headerlink:hover {
+    background-color: #c60f0f;
+    color: white;
+}
+div.body p {
+    text-align: normal;
+    line-height: 130%;
+}
+pre {
+    padding: 5px;
+    background-color: #eeffcc;
+    color: #333333;
+    line-height: 120%;
+    border: 1px solid #ac9;
+    border-left: none;
+    border-right: none;
+}
+tt {
+    background-color: #ecf0f3;
+    padding: 0 1px 0 1px;
+    font-size: 0.95rem;
+}
+/* ================================================== 
+   ------------------ page layout -------------------
+   ================================================== */
+div.related {
+    position: fixed;
+    width: 100%;
+    font-size: 90%;
+    display: none;
+}
+div.related h3 { display: none }
+div.related ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+}
+div.related li { display: inline }
+div.related li.right {
+    float: right;
+    margin-right: 5px;
+}
+/* ================================================== 
+   -------------- scripsit sidebar ------------------
+   ================================================== */
+div.scripsitsidebarwrapper {
+    padding: 3px 5px 0 10px;
+    position: fixed;
+    max-width: 230px;
+}
+div.scripsitsidebar {
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    font-size: 90%;
+}
+div.scripsitsidebar ul { list-style: none }
+div.scripsitsidebar ul ul {
+    margin-left: 20px;
+    list-style: square;
+}
+div.scripsitsidebar ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img { border: 0 }
+
+a.headerlink { visibility: hidden }
+h1:hover > a.headerlink,
+h2:hover > a.headerlink { visibility: visible }
+/* ================================================== 
+   -------------------- tables ----------------------
+   ================================================== */
+caption { font-size:1.2rem }
+table,
+th,
+td {
+    border: 1px solid #dce;
+    border-collapse: collapse;
+    padding: 6px;
+}
+th {
+    text-align: left;
+    padding-right: 5px;
+    background-color: #369;
+    color: #fff;
+}
+td { font-family: 'Open Sans' }
+dl { margin-bottom: 15px }
+dt:target { background-color: #fbe54e }
+pre {
+    overflow: auto;
+    overflow-y: hidden;
+}
+code { font-size: 1.1rem }
+table.rmf-table th, table.rmf-table td {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+}
+table.rmf-table th, table.rmf-table td {
+    padding: 5px;
+    text-align: left;
+}
+table.rmf-table tr:nth-child(even) {
+    background-color: #eee;
+}
+table.rmf-table tr:nth-child(odd) {
+   background-color:#fff;
+}
+    
+/* ================================================== 
+   ------------------ print style -------------------
+   ================================================== */
+@media print { 
+  body, 
+  div.document, 
+  div.documentwrapper, 
+  div.bodywrapper, 
+  div.body  { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    position:relative;
+    clear: both; 
+    width: 100%; 
+    font-family: 'Open Sans', serif; 
+    background-image: none; 
+    background-color: #fff;
+}
+    dl,
+    div.scripsitsidebar,
+    div.related,
+    div.footer,
+    nav { display: none }
+    div.body h1,
+    div.body h2 {
+        font-family: 'Open Sans', sans-serif;
+        // background-color: #f2f2f2;
+        font-weight: normal;
+        color: #000;
+        // border-bottom: 1px solid #ccc;
+        margin: 20px -20px 10px -20px;
+        padding: 3px 0 3px 10px;
+    }
+    div.body h1 {
+        margin-top: 0;
+        font-size: 175%;
+    }
+    div.body h2 { font-size: 125%; }
+    div.body h6 { display:inline;font-family:'Open Sans', sans-serif;font-size:100%;position:fixed;bottom:0px;right:0px; }	
+}
+
+div.toc {
+    font-family: 'Open Sans', serif;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0 1rem;
+    max-width: 48rem;
+}
+div.toc h3 {
+    font-family: 'Open Sans', serif;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: -1rem;
+    padding: 0;
+}
+div.toc ul {
+    list-style:none
+}
+div.toc li:before {
+    content: "\00bb";
+    color: #369;
+    padding-right:0.5rem;
+    text-align: justify;
+}
+div.toc a {
+    color: #333
+}
+div.toc a:hover {
+    color: #369;
+    text-decoration:none
+}

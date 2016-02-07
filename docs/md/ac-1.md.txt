@@ -1,0 +1,16 @@
+title:       Access Controls
+author:      Larry Chaffin
+reviewer:    none
+status:      draft
+date:        2015-11-01
+
+# ACCESS CONTROLS
+---
+## <abbr title="How and when and by whom the set of data was collected.">Descriptive</abbr>
+
+
+## <abbr title="How the data is formatted.">Structural</abbr> 
+
+```
+Display code area
+```

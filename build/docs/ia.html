@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Identification And Authentication &#8212; RMF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+<meta name="reviewer" content="">
+<meta name="status" content="">
+<meta name="date" content="">
+<meta name="generator" content="Python-Markdown">
+<meta name="prototype" content="Zimit-Framework">
+<link rel="metadata" href="md/ia.md.htm" type="text/md">
+<link rel="stylesheet" type="text/css" href="css/zimit.min.css">
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scripsit.js"></script>
+<script src="js/ssp.js"></script></head>
+<body>
+ <header>
+  <nav>
+   <a class="site" href="index.html"><script>document.write(ssp.org.dba);</script></a>
+   <ul id="menu">
+    <li><a href="toc.html">Table of Contents</a></li>
+    <li><a href="index-doc.html">Documentation</a></li>
+    <li><a href="ac-2-doc.html" rel="nofollow">Authorized Users</a></li>
+    <li><a class="meta" href="#open">Metadata</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+    <h1 id="identification-and-authentication">IDENTIFICATION AND AUTHENTICATION<a class="headerlink" href="#identification-and-authentication" title="Permanent link">&para;</a></h1>
+<h2 id="ia-2-identification-and-authentication-organizational-users">IA-2 Identification and Authentication (ORGANIZATIONAL USERS)<a class="headerlink" href="#ia-2-identification-and-authentication-organizational-users" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd>
+<p>Organizational users include employees or individuals that organizations deem to have equivalent status of employees (e.g., contractors, guest researchers). This control applies to all accesses other than: (i) accesses that are explicitly identified and documented in AC-14; and (ii) accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. Organizations employ passwords, tokens, or biometrics to authenticate user identities, or in the case multifactor authentication, or some combination thereof. Access to organizational information systems is defined as either local access or network access. Local access is any access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained by direct connections without the use of networks. Network access is access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks (e.g., the Internet). Internal networks include local area networks and wide area networks. In addition, the use of encrypted virtual private networks (VPNs) for network connections between organization-controlled endpoints and non-organization controlled endpoints may be treated as internal networks from the perspective of protecting the confidentiality and integrity of information traversing the network.<br /><br />Organizations can satisfy the identification and authentication requirements in this control by complying with the requirements in Homeland Security Presidential Directive 12 consistent with the specific organizational implementation plans. Multifactor authentication requires the use of two or more different factors to achieve authentication. The factors are defined as: (i) something you know (e.g., password, personal identification number [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii) something you are (e.g., biometric). Multifactor solutions that require devices separate from information systems gaining access include, for example, hardware tokens providing time-based or challenge-response authenticators and smart cards such as the U.S. Government Personal Identity Verification card and the DoD common access card. In addition to identifying and authenticating users at the information system level (i.e., at logon), organizations also employ identification and authentication mechanisms at the application level, when necessary, to provide increased information security. Identification and authentication requirements for other than organizational users are described in IA-8. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, AC-14, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-18-wireless-access">AC-18</a>, <a href="ia.html#ia-4-identifier-management">IA-4</a>, <a href="ia.html#ia-5-authenticator-management">IA-5</a>, IA-8.</p>
+</dd>
+</dl>
+<h2 id="ia-4-identifier-management">IA-4 Identifier Management<a class="headerlink" href="#ia-4-identifier-management" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> manages information system identifiers by:</p>
+<p>a. Receiving <a href="pm.html#pm-10-security-authorization-process">authorization</a> from <span id="highlight"><script>document.write(ssp.ia4a);</script></span> to assign an individual, group, role, or device identifier;</p>
+<p>b. Selecting an identifier that identifies an individual, group, role, or device;</p>
+<p>c. Assigning the identifier to the intended individual, group, role, or device;</p>
+<p>d. Preventing reuse of identifiers for <span id="highlight"><script>document.write(ssp.ia4d);</script></span>; and</p>
+<p>e. Disabling the identifier after <span id="highlight"><script>document.write(ssp.ia4e);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd>
+<p>Common device identifiers include, for example, media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared information system accounts (e.g., guest and anonymous accounts). Typically, individual identifiers are the user names of the information system accounts assigned to those individuals. In such instances, the account management activities of <a href="ac.html#ac-2-account-management">AC-2</a> use account names provided by <a href="ia.html#ia-4-identifier-management">IA-4</a>. <br /><br />This control also addresses individual identifiers not necessarily associated with information system accounts (e.g., identifiers used in physical security control databases accessed by badge reader systems for access to information systems). Preventing reuse of identifiers implies preventing the assignment of previously used individual, group, role, or device identifiers to different individuals, groups, roles, or devices. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, IA-3, <a href="ia.html#ia-5-authenticator-management">IA-5</a>, IA-8, SC-37.</p>
+</dd>
+</dl>
+<h2 id="ia-5-authenticator-management">IA-5 Authenticator Management<a class="headerlink" href="#ia-5-authenticator-management" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> manages information system authenticators by:</p>
+<p>a. Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator;</p>
+<p>b. Establishing initial authenticator content for authenticators defined by <span id="highlight"><script>document.write(cdc.dba);</script></span>;</p>
+<p>c. Ensuring that authenticators have sufficient strength of mechanism for their intended use;</p>
+<p>d. Establishing and implementing administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators;</p>
+<p>e. Changing default content of authenticators prior to information system installation;</p>
+<p>f. Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators;</p>
+<p>g. Changing/refreshing authenticators <span id="highlight"><script>document.write(ssp.ia5g);</script></span>;</p>
+<p>h. Protecting authenticator content from unauthorized disclosure and modification;</p>
+<p>i. Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators; and</p>
+<p>j. Changing authenticators for group/role accounts when membership to those accounts changes.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Individual authenticators include, for example, passwords, tokens, biometrics, PKI certificates, and key cards. Initial authenticator content is the actual content (e.g., the initial password) as opposed to requirements about authenticator content (e.g., minimum password length). In many cases, developers ship information system components with factory default authentication credentials to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant security risk. The requirement to protect individual authenticators may be implemented via control PL-4 or PS-6 for authenticators in the possession of individuals and by controls <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, and <a href="sc.html#sc-28-protection-of-information-at-rest">SC-28</a> for authenticators stored within organizational information systems (e.g., passwords stored in hashed or encrypted formats, files containing encrypted or hashed passwords accessible with administrator privileges). Information systems support individual authenticator management by organization-defined settings and restrictions for various authenticator characteristics including, for example, minimum password length, password composition, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication.<br /><br />Specific actions that can be taken to safeguard authenticators include, for example, maintaining possession of individual authenticators, not loaning or sharing individual authenticators with others, and reporting lost, stolen, or compromised authenticators immediately. Authenticator management includes issuing and revoking, when no longer needed, authenticators for temporary access such as that required for remote maintenance. Device authenticators include, for example, certificates and passwords. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, <a href="ia.html#ia-4-identifier-management">IA-4</a>, IA-8, PL-4, PS-5, PS-6, SC-12, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>, SC-17, <a href="sc.html#sc-28-protection-of-information-at-rest">SC-28</a>.</p>
+</dd>
+</dl>
+<h2 id="ia-51-authentication-management">IA-5(1) Authentication Management<a class="headerlink" href="#ia-51-authentication-management" title="Permanent link">&para;</a></h2>
+<p><strong>PASSWORD-BASED AUTHENTICATION</strong></p>
+<p>The information system, for password-based authentication:</p>
+<p>(a) Enforces minimum password complexity of <span id="highlight"><script>document.write(ssp.ia51a);</script></span>;</p>
+<p>(b) Enforces at least the following number of changed characters when new passwords are created: <span id="highlight"><script>document.write(ssp.ia51b);</script></span>;</p>
+<p>(c) Stores and transmits only cryptographically-protected passwords;</p>
+<p>(d) Enforces password minimum and maximum lifetime restrictions of <span id="highlight"><script>document.write(ssp.ia51d);</script></span>;</p>
+<p>(e) Prohibits password reuse for <span id="highlight"><script>document.write(ssp.ia51e);</script></span> generations; and</p>
+<p>(f) Allows the use of a temporary password for system logons with an immediate change to a permanent password.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control enhancement applies to single-factor authentication of individuals using passwords as individual or group authenticators, and in a similar manner, when passwords are part of multifactor authenticators. This control enhancement does not apply when passwords are used to unlock hardware authenticators (e.g., Personal Identity Verification cards). The implementation of such password mechanisms may not meet all of the requirements in the enhancement.<br /><br />Cryptographically-protected passwords include, for example, encrypted versions of passwords and one-way cryptographic hashes of passwords. The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. Password lifetime restrictions do not apply to temporary passwords. To mitigate certain brute force attacks against passwords, organizations may also consider salting passwords. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p>IA-6.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Identification And Authentication<br>Source: <a href="ia.txt" rel="nofollow">ia.txt</a><br>Metadata: <a href="md/ia.md.htm" rel="nofollow">ia.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</body>
+</html>

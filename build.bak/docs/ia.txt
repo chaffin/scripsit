@@ -1,0 +1,156 @@
+title:      Identification And Authentication 
+next_url:   ac.html
+next_title: Access Controls
+prev_title: Awareness & Training
+prev_url:   at.html
+
+# IDENTIFICATION AND AUTHENTICATION
+
+IA-2 Identification and Authentication (ORGANIZATIONAL USERS)
+-------------------------------------------------------------
+
+**Control:** The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).
+
+**Supplemental Guidance**
+
+: Organizational users include employees or individuals that organizations deem to have equivalent status of employees (e.g., contractors, guest researchers). This control applies to all accesses other than: (i) accesses that are explicitly identified and documented in AC-14; and (ii) accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. Organizations employ passwords, tokens, or biometrics to authenticate user identities, or in the case multifactor authentication, or some combination thereof. Access to organizational information systems is defined as either local access or network access. Local access is any access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained by direct connections without the use of networks. Network access is access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks (e.g., the Internet). Internal networks include local area networks and wide area networks. In addition, the use of encrypted virtual private networks (VPNs) for network connections between organization-controlled endpoints and non-organization controlled endpoints may be treated as internal networks from the perspective of protecting the confidentiality and integrity of information traversing the network.<br /><br />Organizations can satisfy the identification and authentication requirements in this control by complying with the requirements in Homeland Security Presidential Directive 12 consistent with the specific organizational implementation plans. Multifactor authentication requires the use of two or more different factors to achieve authentication. The factors are defined as: (i) something you know (e.g., password, personal identification number [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii) something you are (e.g., biometric). Multifactor solutions that require devices separate from information systems gaining access include, for example, hardware tokens providing time-based or challenge-response authenticators and smart cards such as the U.S. Government Personal Identity Verification card and the DoD common access card. In addition to identifying and authenticating users at the information system level (i.e., at logon), organizations also employ identification and authentication mechanisms at the application level, when necessary, to provide increased information security. Identification and authentication requirements for other than organizational users are described in IA-8. 
+
+**Related controls** 
+
+: [AC-2], [AC-3], AC-14, [AC-17], [AC-18], [IA-4], [IA-5], IA-8.
+
+IA-4 Identifier Management
+--------------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span> manages information system identifiers by:
+
+a. Receiving [authorization] [PM-10] from <span id="highlight"><script>document.write(ssp.ia4a);</script></span> to assign an individual, group, role, or device identifier;
+
+b. Selecting an identifier that identifies an individual, group, role, or device;
+
+c. Assigning the identifier to the intended individual, group, role, or device;
+
+d. Preventing reuse of identifiers for <span id="highlight"><script>document.write(ssp.ia4d);</script></span>; and
+
+e. Disabling the identifier after <span id="highlight"><script>document.write(ssp.ia4e);</script></span>.
+
+**Supplemental Guidance**
+
+: Common device identifiers include, for example, media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared information system accounts (e.g., guest and anonymous accounts). Typically, individual identifiers are the user names of the information system accounts assigned to those individuals. In such instances, the account management activities of [AC-2] use account names provided by [IA-4]. <br /><br />This control also addresses individual identifiers not necessarily associated with information system accounts (e.g., identifiers used in physical security control databases accessed by badge reader systems for access to information systems). Preventing reuse of identifiers implies preventing the assignment of previously used individual, group, role, or device identifiers to different individuals, groups, roles, or devices. 
+
+**Related controls** 
+
+: [AC-2], [IA-2], IA-3, [IA-5], IA-8, SC-37.
+
+
+IA-5 Authenticator Management
+-----------------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span> manages information system authenticators by:
+
+a. Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator;
+
+b. Establishing initial authenticator content for authenticators defined by <span id="highlight"><script>document.write(cdc.dba);</script></span>;
+
+c. Ensuring that authenticators have sufficient strength of mechanism for their intended use;
+
+d. Establishing and implementing administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators;
+
+e. Changing default content of authenticators prior to information system installation;
+
+f. Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators;
+
+g. Changing/refreshing authenticators <span id="highlight"><script>document.write(ssp.ia5g);</script></span>;
+
+h. Protecting authenticator content from unauthorized disclosure and modification;
+
+i. Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators; and
+
+j. Changing authenticators for group/role accounts when membership to those accounts changes.
+
+**Supplemental Guidance** 
+
+: Individual authenticators include, for example, passwords, tokens, biometrics, PKI certificates, and key cards. Initial authenticator content is the actual content (e.g., the initial password) as opposed to requirements about authenticator content (e.g., minimum password length). In many cases, developers ship information system components with factory default authentication credentials to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant security risk. The requirement to protect individual authenticators may be implemented via control PL-4 or PS-6 for authenticators in the possession of individuals and by controls [AC-3], [AC-6], and [SC-28] for authenticators stored within organizational information systems (e.g., passwords stored in hashed or encrypted formats, files containing encrypted or hashed passwords accessible with administrator privileges). Information systems support individual authenticator management by organization-defined settings and restrictions for various authenticator characteristics including, for example, minimum password length, password composition, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication.<br /><br />Specific actions that can be taken to safeguard authenticators include, for example, maintaining possession of individual authenticators, not loaning or sharing individual authenticators with others, and reporting lost, stolen, or compromised authenticators immediately. Authenticator management includes issuing and revoking, when no longer needed, authenticators for temporary access such as that required for remote maintenance. Device authenticators include, for example, certificates and passwords. 
+
+**Related controls** 
+
+: [AC-2], [AC-3], [AC-6], [CM-6], [IA-2], [IA-4], IA-8, PL-4, PS-5, PS-6, SC-12, [SC-13], SC-17, [SC-28].
+
+IA-5(1) Authentication Management
+---------------------------------
+
+**PASSWORD-BASED AUTHENTICATION**
+
+The information system, for password-based authentication:
+
+(a) Enforces minimum password complexity of <span id="highlight"><script>document.write(ssp.ia51a);</script></span>;
+
+(b) Enforces at least the following number of changed characters when new passwords are created: <span id="highlight"><script>document.write(ssp.ia51b);</script></span>;
+
+(c) Stores and transmits only cryptographically-protected passwords;
+
+(d) Enforces password minimum and maximum lifetime restrictions of <span id="highlight"><script>document.write(ssp.ia51d);</script></span>;
+
+(e) Prohibits password reuse for <span id="highlight"><script>document.write(ssp.ia51e);</script></span> generations; and
+
+(f) Allows the use of a temporary password for system logons with an immediate change to a permanent password.
+
+**Supplemental Guidance** 
+
+: This control enhancement applies to single-factor authentication of individuals using passwords as individual or group authenticators, and in a similar manner, when passwords are part of multifactor authenticators. This control enhancement does not apply when passwords are used to unlock hardware authenticators (e.g., Personal Identity Verification cards). The implementation of such password mechanisms may not meet all of the requirements in the enhancement.<br /><br />Cryptographically-protected passwords include, for example, encrypted versions of passwords and one-way cryptographic hashes of passwords. The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. Password lifetime restrictions do not apply to temporary passwords. To mitigate certain brute force attacks against passwords, organizations may also consider salting passwords. 
+
+**Related control** 
+
+: IA-6.
+
+[AC-2]:ac.html#ac-2-account-management
+[AC-3]:ac.html#ac-3-access-enforcement
+[AC-4]:ac.html#ac-4-information-flow
+[AC-6]:ac.html#ac-6-least-privilege
+[AC-7]:ac.html#ac-7-unsuccessful-logon-attempts
+[AC-11]:ac.html#ac-11-session-lock
+[AC-17]:ac.html#ac-17-remote-access
+[AC-18]:ac.html#ac-18-wireless-access
+[AC-19]:ac.html#ac-19-access-control-for-mobile-devices
+[AC-20]:ac.html#ac-20-use-of-external-information-systems
+[AC-22]:ac.html#ac-22-publicly-accessible-content	
+[AT-2]:at.html#security-awareness-training
+[AU-2]:au.html#au-2-audits-events
+[AU-3]:au.html#au-3-content-of-audit-records
+[AU-6]:au.html#au-6-1-audit-review-analysis-and-reporting
+[AU-7]:au.html#au-7-audit-reduction-and-report-generation
+[AU-8]:au.html#au-8-time-stamps
+[AU-9]:au.html#au-9-protection-of-audit-information
+[CM-2]:cm.html#cm-2-baseline-configuration
+[CM-6]:cm.html#cm-6-configuration-settings
+[CM-7]:cm.html#cm-7-least-functionality
+[CM-8]:cm.html#cm-8-information-system-component-inventory
+[CP-9]:cp.html#cp-9-information-system-backup
+[IA-2]:ia.html#identification-and-authentication
+[IA-4]:ia.html#ia-4-identifier-management
+[IA-5]:ia.html#ia-5-authenticator-management
+[IR-2]:ir.html#ir-2-incident-response-training
+[IR-4]:ir.html#ir-4-incident-handling
+[IR-5]:ir.html#ir-5-incident-monitoring
+[IR-6]:ir.html#ir-6-incident-reporting
+[MA-4]:ma.html#maintenance
+[MA-5]:ma.html#ma-5-maintenance-personnel
+[MA-6]:ma.html#ma-6-timely-maintenance
+[MP-4]:mp.html#mp-4-media-storage
+[MP-6]:mp.html#mp-6-media-sanitization
+[PE-2]:pe.html#pe-2-physical-access-authorizations
+[PE-3]:pe.html#pe-3-physical-access-control
+[PE-5]:pe.html#pe-5-access-control-for-output-devices
+[PM-10]:pm.html#pm-10-security-authorization-process
+[RA-5]:ra.html#ra-5-vulnerability-scanning
+[SC-2]:sc.html#sc-2-application-partitioning
+[SC-4]:sc.html#sc-4-information-in-shared-resources
+[SC-7]:sc.html#sc-7-boundary-protection
+[SC-8]:sc.html#sc-8-transmission-confidentiality-and-integrity
+[SC-13]:sc.html#sc-13-cryptographic-protection
+[SC-15]:sc.html#sc-15-collaborative-computing-devices
+[SC-28]:sc.html#sc-28-protection-of-information-at-rest
+[SI-2]:si.html#si-2-flaw-remediation
+[SI-3]:si.html#si-3-malicious-code-protection
+[SI-4]:si.html#si-4-information-system-monitoring
+<div style="page-break-after:always;"></div>

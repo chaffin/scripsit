@@ -1,0 +1,137 @@
+title:      System & Information Integrity
+next_url:   mp.html
+next_title: Media Protection
+prev_title: Maintenance 
+prev_url:   ma.html
+
+# SYSTEM AND INFORMATION INTEGRITY
+
+SI-2 Flaw Remediation
+---------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span>:
+
+a. Identifies, reports, and corrects information system flaws;
+
+b. Tests software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
+
+c. Installs security-relevant software and firmware updates within <span id="highlight"><script>document.write(ssp.si2c);</script></span> of the release of the updates; and
+
+d. Incorporates flaw remediation into the organizational configuration management process.
+
+**Supplemental Guidance** 
+
+: Organizations identify information systems affected by announced software flaws including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security responsibilities. Security-relevant software updates include, for example, patches, service packs, hot fixes, and anti-virus signatures. Organizations also address flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations take advantage of available resources such as the Common Weakness Enumeration (CWE) or Common Vulnerabilities and Exposures (CVE) databases in remediating flaws discovered in organizational information systems. By incorporating flaw remediation into ongoing configuration management processes, required/anticipated remediation actions can be tracked and verified. Flaw remediation actions that can be tracked and verified include, for example, determining whether organizations follow US-CERT guidance and Information Assurance Vulnerability Alerts. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types. Organizations determine the degree and type of testing needed for the specific type of flaw remediation activity under consideration and also the types of changes that are to be configuration-managed. In some situations, organizations may determine that the testing of software and/or firmware updates is not necessary or practical, for example, when implementing simple anti-virus signature updates. Organizations may also consider in testing decisions, whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures. 
+
+**Related controls** 
+
+: CA-2, CA-7, CM-3, CM-5, [CM-8], MA-2, [IR-4], [RA-5], SA-10, SA-11, SI-11.
+
+SI-3 Malicious Code Protection 
+------------------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span>:
+
+a. Employs malicious code protection mechanisms at information system entry and exit points to detect and eradicate malicious code;
+
+b. Updates malicious code protection mechanisms whenever new releases are available in accordance with organizational configuration management policy and procedures;
+
+c. Configures malicious code protection mechanisms to:
+
+  1. Perform periodic scans of the information system <span id="highlight"><script>document.write(ssp.si3cx1);</script></span> and real-time scans of files from external sources at <span id="highlight"><script>document.write(ssp.si3cx2);</script></span> as the files are downloaded, opened, or executed in accordance with organizational security policy; and
+
+  2. <span id="highlight"><script>document.write(ssp.si3c2);</script></span> in response to malicious code detection; and
+  
+d. Addresses the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the information system.
+
+**Supplemental Guidance**
+
+: Information system entry and exit points include, for example, firewalls, electronic mail servers, web servers, proxy servers, remote-access servers, workstations, notebook computers, and mobile devices. Malicious code includes, for example, viruses, worms, Trojan horses, and spyware. Malicious code can also be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using steganography. Malicious code can be transported by different means including, for example, web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of information system vulnerabilities. Malicious code protection mechanisms include, for example, anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include, for example, logic bombs, back doors, and other types of cyber attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including, for example, secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. Organizations may determine that in response to the detection of malicious code, different actions may be warranted. For example, organizations can define actions in response to malicious code detection during periodic scans, actions in response to detection of malicious downloads, and/or actions in response to detection of maliciousness when attempting to open or execute files. 
+
+**Related controls** 
+
+: CM-3, MP-2, SA-4, SA-8, SA-12, SA-13, [SC-7], SC-26, SC-44, [SI-2], [SI-4], SI-7.
+
+
+SI-4 Information System Monitoring 
+----------------------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span>:
+
+a. Monitors the information system to detect:
+
+  1. Attacks and indicators of potential attacks in accordance with <span id="highlight"><script>document.write(ssp.si4a1);</script></span>; and
+
+  2. Unauthorized local, network, and remote connections;
+  
+b. Identifies unauthorized use of the information system through <span id="highlight"><script>document.write(ssp.si4b);</script></span>;
+
+c. Deploys monitoring devices: (i) strategically within the information system to collect organization-determined essential information; and (ii) at ad hoc locations within the system to track specific types of transactions of interest to <span id="highlight"><script>document.write(cdc.dba);</script></span>;
+
+d. Protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion;
+
+e. Heightens the level of information system monitoring activity whenever there is an indication of increased risk to organizational operations and assets, individuals, other organizations, or the Nation based on law enforcement information, intelligence information, or other credible sources of information;
+
+f. Obtains legal opinion with regard to information system monitoring activities in accordance with applicable federal laws, Executive Orders, directives, policies, or regulations; and
+
+g. Provides <span id="highlight"><script>document.write(ssp.si4gx1);</script></span> to <span id="highlight"><script>document.write(ssp.si4gx2);</script></span>; <span id="highlight"><script>document.write(ssp.si4gx3);</script></span>.
+
+**Supplemental Guidance** 
+
+: Information system monitoring includes external and internal monitoring. External monitoring includes the observation of events occurring at the information system boundary (i.e., part of perimeter defense and boundary protection). Internal monitoring includes the observation of events occurring within the information system. Organizations can monitor information systems, for example, by observing audit activities in real time or by observing other system aspects such as access patterns, characteristics of access, and other actions. The monitoring objectives may guide determination of the events. Information system monitoring capability is achieved through a variety of tools and techniques (e.g., intrusion detection systems, intrusion prevention systems, malicious code protection software, scanning tools, audit record monitoring software, network monitoring software). Strategic locations for monitoring devices include, for example, selected perimeter locations and near server farms supporting critical applications, with such devices typically being employed at the managed interfaces associated with controls SC-7 and AC-17. Einstein network monitoring devices from the Department of Homeland Security can also be included as monitoring devices. The granularity of monitoring information collected is based on organizational monitoring objectives and the capability of information systems to support such objectives. Specific types of transactions of interest include, for example, Hyper Text Transfer Protocol (HTTP) traffic that bypasses HTTP proxies. Information system monitoring is an integral part of organizational continuous monitoring and incident response programs. Output from system monitoring serves as input to continuous monitoring and incident response programs. A network connection is any connection with a device that communicates through a network (e.g., local area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet). Local, network, and remote connections can be either wired or wireless. 
+
+**Related controls** 
+
+: [AC-3], [AC-4], AC-8, [AC-17], [AU-2], [AU-6], [AU-7], [AU-9], AU-12, CA-7, [IR-4], [PE-3], [RA-5], [SC-7], SC-26, SC-35, [SI-3], SI-7.
+
+[AC-2]:ac.html#ac-2-account-management
+[AC-3]:ac.html#ac-3-access-enforcement
+[AC-4]:ac.html#ac-4-information-flow
+[AC-6]:ac.html#ac-6-least-privilege
+[AC-7]:ac.html#ac-7-unsuccessful-logon-attempts
+[AC-11]:ac.html#ac-11-session-lock
+[AC-17]:ac.html#ac-17-remote-access
+[AC-18]:ac.html#ac-18-wireless-access
+[AC-19]:ac.html#ac-19-access-control-for-mobile-devices
+[AC-20]:ac.html#ac-20-use-of-external-information-systems
+[AC-22]:ac.html#ac-22-publicly-accessible-content	
+[AT-2]:at.html#security-awareness-training
+[AU-2]:au.html#au-2-audits-events
+[AU-3]:au.html#au-3-content-of-audit-records
+[AU-6]:au.html#au-6-1-audit-review-analysis-and-reporting
+[AU-7]:au.html#au-7-audit-reduction-and-report-generation
+[AU-8]:au.html#au-8-time-stamps
+[AU-9]:au.html#au-9-protection-of-audit-information
+[CM-2]:cm.html#cm-2-baseline-configuration
+[CM-6]:cm.html#cm-6-configuration-settings
+[CM-7]:cm.html#cm-7-least-functionality
+[CM-8]:cm.html#cm-8-information-system-component-inventory
+[CP-9]:cp.html#cp-9-information-system-backup
+[IA-2]:ia.html#identification-and-authentication
+[IA-4]:ia.html#ia-4-identifier-management
+[IA-5]:ia.html#ia-5-authenticator-management
+[IR-2]:ir.html#ir-2-incident-response-training
+[IR-4]:ir.html#ir-4-incident-handling
+[IR-5]:ir.html#ir-5-incident-monitoring
+[IR-6]:ir.html#ir-6-incident-reporting
+[MA-4]:ma.html#maintenance
+[MA-5]:ma.html#ma-5-maintenance-personnel
+[MA-6]:ma.html#ma-6-timely-maintenance
+[MP-4]:mp.html#mp-4-media-storage
+[MP-6]:mp.html#mp-6-media-sanitization
+[PE-2]:pe.html#pe-2-physical-access-authorizations
+[PE-3]:pe.html#pe-3-physical-access-control
+[PE-5]:pe.html#pe-5-access-control-for-output-devices
+[PM-10]:pm.html#pm-10-security-authorization-process
+[RA-5]:ra.html#ra-5-vulnerability-scanning
+[SC-2]:sc.html#sc-2-application-partitioning
+[SC-4]:sc.html#sc-4-information-in-shared-resources
+[SC-7]:sc.html#sc-7-boundary-protection
+[SC-8]:sc.html#sc-8-transmission-confidentiality-and-integrity
+[SC-13]:sc.html#sc-13-cryptographic-protection
+[SC-15]:sc.html#sc-15-collaborative-computing-devices
+[SC-28]:sc.html#sc-28-protection-of-information-at-rest
+[SI-2]:si.html#si-2-flaw-remediation
+[SI-3]:si.html#si-3-malicious-code-protection
+[SI-4]:si.html#si-4-information-system-monitoring
+<div style="page-break-after:always;"></div>

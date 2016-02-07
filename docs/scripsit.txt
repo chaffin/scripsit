@@ -1,0 +1,37 @@
+title:      Scripsit
+author:     <script>document.write((scripsit.author));</script>
+reviewer:   
+status:     <script>document.write((scripsit.version));</script>
+date:       <script>document.write((scripsit.date));</script>
+prev_title: Home 
+prev_url:   index.html
+next_title: Table of Contents
+next_url:   toc.html
+
+Scripsit
+========
+<div style="float:right;">
+<img src="img/is3_solutions.png">
+</div>
+
+**Scripsit** (skrip'sit) Latin He (or she) wrote (it).
+
+Scripsit outlines the minimum required security controls for unclassified controlled technical information requiring safeguarding in accordance with DFARS 204.73.  
+
+Scripsit Documentation Project is a resource kit that is designed for the DoD contractor to assist in implementing  adequate security measures to safeguard unclassified controlled technical information and to prescribe reporting to DoD with regard to the compromise of unclassified controlled technical information resident on or transiting through the contractor unclassified information systems.
+
+---
+<!--object type="image/svg+xml" data="img/RMF_Client.svg" width="780" height="780"-->
+<div class="help">
+
+Help Topics
+-----------
+
+<dl>
+<script>
+for (i in scripsit.help) {
+document.write("<dt>" + (scripsit.help[i].title) + "</dt><dd>" + (scripsit.help[i].text) + "</dd>");
+ }
+</script>
+</dl>
+</div>

@@ -1,0 +1,22 @@
+title:      Risk Management Framework
+author:     Larry Chaffin
+reviewer:   none
+status:     draft
+date:       2015-10-18
+next_url:   toc.html
+next_title: Table of Contents
+prev_title: Documentation
+prev_url:   doc_index.html
+
+# <script>document.write(ssp.org.name);</script>
+<script>document.write((ssp.org.address.unclassified.street) +\"<br />\"+ (ssp.org.address.unclassified.city) + \",&nbsp;\" + (ssp.org.address.unclassified.state) + \"&nbsp;\" + (ssp.org.address.unclassified.zip));</script>
+
+---
+
+<div style="float:right;"><img src="img/icon_library_section.png"></div>
+
+<script>
+for (i in ssp.org.description) {
+  document.write("<p>" + (ssp.org.description[i].para) + "</p>");
+}
+</script>

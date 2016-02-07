@@ -1,0 +1,80 @@
+title:      Documentation
+author:     Larry Chaffin
+reviewer:
+status:     draft
+date:       10/11/2015
+next_url:   toc.html
+next_title: Table of Contents
+prev_title: Home
+prev_url:   index.html
+
+# <script>document.write(cdc.name);</script> Documentation
+
+AC-2 Account Management
+-----------------------
+<mark><script>document.write(cdc.dba);</script></mark> specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account. Users requiring administrative privileges on information system accounts receive additional scrutiny by appropriate organizational personnel (e.g., system owner, mission/business owner, or chief information security officer) responsible for approving such accounts and privileged access.
+
+The identification of authorized users of the information system and the specification of access privileges are maintained in the Authorized Users Table found in [Attachment 1] [at-1].
+
+
+AC-17 REMOTE ACCESS 
+-------------------
+
+* Establishes and documents usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed
+
+[AC-22 Publicly Accessible Content] [ac-22]
+---------------------------------
+
+CM-2 Baseline Configuration
+---------------------------
+
+* Develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
+
+CM-6 Configuration Settings
+----
+
+* Establishes and documents configuration settings for information technology products employed within the information system 
+* Identifies, documents, and approves any deviations from established configuration settings
+
+CM-8 Information System Component Inventory
+----
+
+* Develops and documents an inventory of information system components
+
+CP-9 Information System Backup
+----
+
+* Conducts backups of information system documentation including security-related documentation
+
+IA-4 Identifier Management
+----
+
+* Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, or device identifier
+
+IR-5 Incident Monitoring
+----
+* tracks and documents information system security incidents
+
+MA-4 Maintenance
+----
+* documented in the security plan for the information system
+Maintains records for nonlocal maintenance and diagnostic activities
+
+MA-5 Maintenance Personnel
+----
+* maintains a list of authorized maintenance organizations or personnel
+
+PE-2 Physical Access Authorizations
+----
+* Develops, approves, and maintains a list of individuals with authorized access to the facility where the information system resides
+
+PE-3 Physical Access Control
+----
+* Maintains physical access audit logs
+
+RA-5 Risk Assessment
+----
+Formatting checklists and test procedures
+
+[at-1]:doc_ac-2.html
+[ac-22]:doc_ac-22.html

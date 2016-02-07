@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Maintenance &#8212; RMF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+<meta name="reviewer" content="">
+<meta name="status" content="">
+<meta name="date" content="">
+<meta name="generator" content="Python-Markdown">
+<meta name="prototype" content="Zimit-Framework">
+<link rel="metadata" href="md/ma.md.htm" type="text/md">
+<link rel="stylesheet" type="text/css" href="css/zimit.min.css">
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scripsit.js"></script>
+<script src="js/ssp.js"></script></head>
+<body>
+ <header>
+  <nav>
+   <a class="site" href="index.html"><script>document.write(ssp.org.dba);</script></a>
+   <ul id="menu">
+    <li><a href="toc.html">Table of Contents</a></li>
+    <li><a href="index-doc.html">Documentation</a></li>
+    <li><a href="ac-2-doc.html" rel="nofollow">Authorized Users</a></li>
+    <li><a class="meta" href="#open">Metadata</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+    <h1 id="maintenance">MAINTENANCE<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h1>
+<h2 id="ma-4-nonlocal-maintenance">MA-4 Nonlocal Maintenance<a class="headerlink" href="#ma-4-nonlocal-maintenance" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Approves and monitors nonlocal maintenance and diagnostic activities;</p>
+<p>b. Allows the use of nonlocal maintenance and diagnostic tools only as consistent with organizational policy and documented in the <a href="ac.html#ac-17-remote-access">security plan</a> for the information system;</p>
+<p>c. Employs strong authenticators in the establishment of nonlocal maintenance and diagnostic sessions;</p>
+<p>d. Maintains records for nonlocal maintenance and diagnostic activities; and</p>
+<p>e. Terminates session and network connections when nonlocal maintenance is completed.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the Internet) or an internal network. Local maintenance and diagnostic activities are those activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection. Authentication techniques used in the establishment of nonlocal maintenance and diagnostic sessions reflect the network access requirements in <a href="ia.html#identification-and-authentication">IA-2</a>. Typically, strong authentication requires authenticators that are resistant to replay attacks and employ multifactor authentication. Strong authenticators include, for example, PKI where certificates are stored on a token protected by a password, passphrase, or biometric.</p>
+</dd>
+</dl>
+<p><strong>Enforcing</strong> requirements in <a href="ma.html#maintenance">MA-4</a> is accomplished in part by other controls. </p>
+<dl>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="au.html#au-2-audits-events">AU-2</a>, <a href="au.html#au-3-content-of-audit-records">AU-3</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, <a href="ia.html#ia-4-identifier-management">IA-4</a>, <a href="ia.html#ia-5-authenticator-management">IA-5</a>, IA-8, MA-2, <a href="ma.html#ma-5-maintenance-personnel">MA-5</a>, <a href="mp.html#mp-6-media-sanitization">MP-6</a>, PL-2, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, SC-10, SC-17.</p>
+</dd>
+</dl>
+<h2 id="ma-46-cryptographic-protection">MA-4(6) Cryptographic Protection<a class="headerlink" href="#ma-46-cryptographic-protection" title="Permanent link">&para;</a></h2>
+<p>The information system implements cryptographic mechanisms to protect the integrity and confidentiality of nonlocal maintenance and diagnostic communications.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>None</p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h2 id="ma-5-maintenance-personnel">MA-5 Maintenance Personnel<a class="headerlink" href="#ma-5-maintenance-personnel" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>: </p>
+<p>a. Establishes a process for maintenance personnel authorization and maintains a list of authorized maintenance organizations or personnel;</p>
+<p>b. Ensures that non-escorted personnel performing maintenance on the information system have required access authorizations; and</p>
+<p>c. Designates organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control applies to individuals performing hardware or software maintenance on organizational information systems, while <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a> addresses physical access for individuals whose maintenance duties place them within the physical protection perimeter of the systems (e.g., custodial staff, physical plant maintenance personnel). Technical competence of supervising individuals relates to the maintenance performed on the information systems while having required access authorizations refers to maintenance on and near the systems. Individuals not previously identified as authorized maintenance personnel, such as information technology manufacturers, vendors, systems integrators, and consultants, may require privileged access to organizational information systems, for example, when required to conduct maintenance activities with little or no notice. Based on organizational assessments of risk, organizations may issue temporary credentials to these individuals. Temporary credentials may be for one-time use or for very limited time periods. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, IA-8, MP-2, <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, PE-4, RA-3.</p>
+</dd>
+</dl>
+<h2 id="ma-6-timely-maintenance">MA-6 Timely Maintenance<a class="headerlink" href="#ma-6-timely-maintenance" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> obtains maintenance support and/or spare parts for <span id="highlight"><script>document.write(ssp.ma61);</script></span> within <span id="highlight"><script>document.write(ssp.ma62);</script></span> of failure.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizations specify the information system components that result in increased risk to organizational operations and assets, individuals, other organizations, or the Nation when the functionality provided by those components is not operational. Organizational actions to obtain maintenance support typically include having appropriate contracts in place. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="cm.html#cm-8-information-system-component-inventory">CM-8</a>, CP-2, CP-7, SA-14, SA-15.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Maintenance<br>Source: <a href="ma.txt" rel="nofollow">ma.txt</a><br>Metadata: <a href="md/ma.md.htm" rel="nofollow">ma.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+var rmf = {
+  "tasks": [
+    {
+      "task_id": "1-1",
+      "task": "Categorize the information system and document the results of the security categorization in the\nsecurity plan.",
+      "responsibility": "Information System Owner; Information Owner/Steward.",
+      "roles": "Risk Executive (Function); Authorizing Official or Designated Representative; Chief Information\nOfficer; Senior Information Security Officer; Information System Security Officer.",
+      "sdlc": "Initiation (concept/requirements definition)."
+    },
+    {
+      "task_id": "1-2",
+      "task": "Describe the information system (including system boundary) and document the description in\nthe security plan.",
+      "responsibility": "Information System Owner.",
+      "roles": "Authorizing Official or Designated Representative; Senior Information Security Officer;\nInformation Owner/Steward; Information System Security Officer.",
+      "sdlc": "Initiation (concept/requirements definition)."
+    },
+    {
+      "task_id": "1-3",
+      "task": "Register the information system with appropriate organizational program/management offices.",
+      "responsibility": "Information System Owner.",
+      "roles": "Information System Security Officer.",
+      "sdlc": "Initiation (concept/requirements definition)."
+    }
+  ]
+}

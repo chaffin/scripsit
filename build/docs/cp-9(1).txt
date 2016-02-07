@@ -1,0 +1,26 @@
+title:      Testing for Reliability &#8260; Integrity 
+author:     Larry Chaffin
+reviewer:    
+status:     draft
+date:       2015-10-28
+next_url:   cm.html
+next_title: Configuration Management
+prev_title: Information System Backup
+prev_url:   cp-9.html
+
+# Contingency Planning
+
+## CP-9(1) Testing for Reliability &#8260; Integrity 
+
+**Control:** <mark><script>document.write(RMF.cp91.control);</script></mark>:
+
+The organization tests backup information <mark><script>document.write(RMF.cp91.a);</script></mark> to verify media reliability and information integrity.
+
+**Supplemental Guidance**
+
+: None
+
+**Related controls** 
+
+: CP-4
+

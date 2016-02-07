@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- when using the mode "code", it's important to specify charset utf-8 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
+<script src="jsoneditor/dist/jsoneditor.min.js"></script>
+</head>
+<body>
+<div id="jsoneditor" style="margin:2% auto;width:80%;height:500px;"></div>
+<script>
+// set json
+var json = {
+  "ac2": {
+    "control": "common | system-specific | hybrid",
+    "author": "Firstname Lastname",
+    "date": "YYYY-MM-DD",
+    "reference": "",
+    "comments": "",
+    "a": {
+      "control": "[Assignment: <b>CCI-000007</b> organization-defined information system account types]",
+      "CCI-000007": "The organization manages information system accounts by identifying \naccount types (i.e., individual, group, system, application, \nguest/anonymous, and temporary)."
+    },
+    "b": {
+      "control": "[Assignment: <b>CCI-000010</b> organization-defined personnel or roles]",
+      "CCI-000010": "The organization requires approvals by organization-defined personnel or\n roles for requests to create information system accounts."
+    }
+  }
+};
+// create the editor
+var container = document.getElementById("jsoneditor");
+// set the options
+var options = {
+  mode: 'tree',
+  modes: ['code', 'form', 'text', 'tree', 'view'], // allowed modes
+  error: function (err) {
+  alert(err.toString());
+ }
+};
+var editor = new JSONEditor(container, options, json);
+</script>
+</body>
+</html>

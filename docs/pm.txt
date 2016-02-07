@@ -1,0 +1,98 @@
+title:      Program Management
+author:     Larry Chaffin
+reviewer:
+status:     draft
+date:       2015-10-26
+next_url:   ra.html
+next_title: Risk Assessment
+prev_title: System and Communications Protection 
+prev_url:   sc.html
+
+# PROGRAM MANAGEMENT 
+
+PM-10 Security Authorization Process 
+------------------------------------
+
+**Control:** <mark><script>document.write(cdc.name);</script></mark>:
+
+a. Manages (i.e., documents, tracks, and reports) the security state of organizational information systems and the environments in which those systems operate through security authorization processes;
+
+b. Designates individuals to fulfill specific roles and responsibilities within the organizational risk management process; and
+
+c. Fully integrates the security authorization processes into an organization-wide risk management program.
+
+<table>
+<caption>Roles and Responsibilities</caption>
+<tr><th>Name</th><th>Title</th><th>Responsibility</th>
+</tr>
+<script>
+for (i in cdc.role) {
+  document.write("<tr><td>Name:&nbsp;" + (cdc.role[i].firstname) + "&nbsp;" + (cdc.role[i].lastname) + "<br>Phone:&nbsp;" + (cdc.role[i].office) + "<br>Email:&nbsp;" + (cdc.role[i].email) + "</td><td>" + (cdc.role[i].title) + "</td><td>" + (cdc.role[i].responsible) + "</td></tr>");
+}
+</script>
+</table>
+
+**Supplemental Guidance** 
+
+: Security authorization processes for information systems and environments of operation require the implementation of an organization-wide risk management process, a Risk Management Framework, and associated security standards and guidelines. Specific roles within the risk management process include an organizational risk executive (function) and designated authorizing officials for each organizational information system and common control provider. Security authorization processes are integrated with organizational continuous monitoring processes to facilitate ongoing understanding and acceptance of risk to organizational operations and assets, individuals, other organizations, and the Nation. 
+
+**Related control** 
+
+: CA-6
+
+**References** 
+
+: NIST Special Publications 800-37, 800-39.
+
+[AC-2]:ac.html#ac-2-account-management
+[AC-3]:ac.html#ac-3-access-enforcement
+[AC-4]:ac.html#ac-4-information-flow
+[AC-6]:ac.html#ac-6-least-privilege
+[AC-7]:ac.html#ac-7-unsuccessful-logon-attempts
+[AC-11]:ac.html#ac-11-session-lock
+[AC-17]:ac.html#ac-17-remote-access
+[AC-18]:ac.html#ac-18-wireless-access
+[AC-19]:ac.html#ac-19-access-control-for-mobile-devices
+[AC-20]:ac.html#ac-20-use-of-external-information-systems
+[AC-22]:ac.html#ac-22-publicly-accessible-content	
+[AT-2]:at.html#security-awareness-training
+[AU-2]:au.html#au-2-audits-events
+[AU-3]:au.html#au-3-content-of-audit-records
+[AU-6]:au.html#au-6-1-audit-review-analysis-and-reporting
+[AU-7]:au.html#au-7-audit-reduction-and-report-generation
+[AU-8]:au.html#au-8-time-stamps
+[AU-9]:au.html#au-9-protection-of-audit-information
+[CM-2]:cm.html#cm-2-baseline-configuration
+[CM-6]:cm.html#cm-6-configuration-settings
+[CM-7]:cm.html#cm-7-least-functionality
+[CM-8]:cm.html#cm-8-information-system-component-inventory
+[CP-9]:cp.html#cp-9-information-system-backup
+[IA-2]:ia.html#identification-and-authentication
+[IA-4]:ia.html#ia-4-identifier-management
+[IA-5]:ia.html#ia-5-authenticator-management
+[IR-2]:ir.html#ir-2-incident-response-training
+[IR-4]:ir.html#ir-4-incident-handling
+[IR-5]:ir.html#ir-5-incident-monitoring
+[IR-6]:ir.html#ir-6-incident-reporting
+[MA-4]:ma.html#maintenance
+[MA-5]:ma.html#ma-5-maintenance-personnel
+[MA-6]:ma.html#ma-6-timely-maintenance
+[MP-4]:mp.html#mp-4-media-storage
+[MP-6]:mp.html#mp-6-media-sanitization
+[PE-2]:pe.html#pe-2-physical-access-authorizations
+[PE-3]:pe.html#pe-3-physical-access-control
+[PE-5]:pe.html#pe-5-access-control-for-output-devices
+[PM-10]:pm.html#pm-10-security-authorization-process
+[RA-5]:ra.html#ra-5-vulnerability-scanning
+[SC-2]:sc.html#sc-2-application-partitioning
+[SC-4]:sc.html#sc-4-information-in-shared-resources
+[SC-7]:sc.html#sc-7-boundary-protection
+[SC-8]:sc.html#sc-8-transmission-confidentiality-and-integrity
+[SC-13]:sc.html#sc-13-cryptographic-protection
+[SC-15]:sc.html#sc-15-collaborative-computing-devices
+[SC-28]:sc.html#sc-28-protection-of-information-at-rest
+[SI-2]:si.html#si-2-flaw-remediation
+[SI-3]:si.html#si-3-malicious-code-protection
+[SI-4]:si.html#si-4-information-system-monitoring
+<div style="page-break-after:always;"></div>
+

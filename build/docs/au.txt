@@ -1,0 +1,159 @@
+title:      Audit & Accountability 
+next_url:   sc.html 
+next_title: System and Communications Protection
+prev_title: Access Controls
+prev_url:   ac.html
+
+# Audit & Accountability
+
+AU-2 Audits Events 
+------------------
+
+**Control:** <span id="highlight"><script>document.write(cdc.name);</script></span>:  
+
+a. Determines that the information system is capable of auditing the following events: <span id="highlight"><script>document.write(ssp.au2a);</script></span>;
+
+b. Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events;
+
+c. Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and
+
+d. Determines that the following events are to be audited within the information system: <span id="highlight"><script>document.write(ssp.au2d);</script></span>.
+
+**Supplemental Guidance** 
+
+: An event is any observable occurrence in an organizational information system. Organizations identify audit events as those events which are significant and relevant to the security of information systems and the environments in which those systems operate in order to meet specific and ongoing audit needs. Audit events can include, for example, password changes, failed logons, or failed accesses related to information systems, administrative privilege usage, PIV credential usage, or third-party credential usage. In determining the set of auditable events, organizations consider the auditing appropriate for each of the security controls to be implemented. To balance auditing requirements with other information system needs, this control also requires identifying that subset of auditable events that are audited at a given point in time. For example, organizations may determine that information systems must have the capability to log every file access both successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. Auditing requirements, including the need for auditable events, may be referenced in other security controls and control enhancements. Organizations also include auditable events that are required by applicable federal laws, Executive Orders, directives, policies, regulations, and standards. Audit records can be generated at various levels of abstraction, including at the packet level as information traverses the network. Selecting the appropriate level of abstraction is a critical aspect of an audit capability and can facilitate the identification of root causes to problems. Organizations consider in the definition of auditable events, the auditing necessary to cover related events such as the steps in distributed, transaction-based processes (e.g., processes that are distributed across multiple organizations) and actions that occur in service-oriented architectures. 
+
+**Related controls** 
+
+: [AC-6], [AC-17], [AU-3], AU-12, [MA-4], MP-2, [MP-4], [SI-4].
+
+
+AU-3 Content of Audit Records
+-----------------------------
+
+**Control:** The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
+
+**Supplemental Guidance** 
+
+: Audit record content that may be necessary to satisfy the requirement of this control, includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked. Event outcomes can include indicators of event success or failure and event-specific results (e.g., the security state of the information system after the event occurred). 
+
+**Related controls** 
+
+: [AU-2], [AU-8], AU-12, SI-11.
+
+AU-6 (1) Audit Review, Analysis, and Reporting
+----------------------------------------------
+
+**PROCESS INTEGRATION**
+
+The organization employs automated mechanisms to integrate audit review, analysis, and reporting processes to support organizational processes for investigation and response to suspicious activities.
+
+**Supplemental Guidance** 
+
+: Organizational processes benefiting from integrated audit review, analysis, and reporting include, for example, incident response, continuous monitoring, contingency planning, and Inspector General audits. 
+
+**Related controls** 
+
+: AU-12, PM-7.
+
+
+AU-7 Audit Reduction and Report Generation 
+------------------------------------------
+
+**Control:** The information system provides an audit reduction and report generation capability that:  
+
+a. Supports on-demand audit review, analysis, and reporting requirements and after-the-fact investigations of security incidents; and
+
+b. Does not alter the original content or time ordering of audit records.
+
+**Supplemental Guidance** 
+
+: Audit reduction is a process that manipulates collected audit information and organizes such information in a summary format that is more meaningful to analysts. Audit reduction and report generation capabilities do not always emanate from the same information system or from the same organizational entities conducting auditing activities. Audit reduction capability can include, for example, modern data mining techniques with advanced data filters to identify anomalous behavior in audit records. The report generation capability provided by the information system can generate customizable reports. Time ordering of audit records can be a significant issue if the granularity of the timestamp in the record is insufficient. 
+
+**Related control** 
+
+: [AU-6].
+
+
+AU-8 Time Stamps 
+----------------
+
+**Control:** The information system:  
+
+a. Uses internal system clocks to generate time stamps for audit records; and
+
+b. Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets <span id="highlight"><script>document.write(ssp.au8b);</script></span>.
+
+**Supplemental Guidance** 
+
+: Time stamps generated by the information system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between information system clocks and reference clocks, for example, clocks synchronizing within hundreds of milliseconds or within tens of milliseconds. Organizations may define different time granularities for different system components. Time service can also be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities. 
+
+**Related controls** 
+
+: [AU-3], AU-12.
+
+
+AU-9 Protection of Audit Information 
+------------------------------------
+
+**Control:** The information system protects audit information and audit tools from unauthorized access, modification, and deletion.
+
+**Supplemental Guidance** 
+
+: Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. This control focuses on technical protection of audit information. Physical protection of audit information is addressed by media protection controls and physical and environmental protection controls. 
+
+**Related controls** 
+
+: [AC-3], [AC-6], MP-2, [MP-4], [PE-2], [PE-3], PE-6.
+
+[AC-2]:ac.html#ac-2-account-management
+[AC-3]:ac.html#ac-3-access-enforcement
+[AC-4]:ac.html#ac-4-information-flow
+[AC-6]:ac.html#ac-6-least-privilege
+[AC-7]:ac.html#ac-7-unsuccessful-logon-attempts
+[AC-11]:ac.html#ac-11-session-lock
+[AC-17]:ac.html#ac-17-remote-access
+[AC-18]:ac.html#ac-18-wireless-access
+[AC-19]:ac.html#ac-19-access-control-for-mobile-devices
+[AC-20]:ac.html#ac-20-use-of-external-information-systems
+[AC-22]:ac.html#ac-22-publicly-accessible-content	
+[AT-2]:at.html#security-awareness-training
+[AU-2]:au.html#au-2-audits-events
+[AU-3]:au.html#au-3-content-of-audit-records
+[AU-6]:au.html#au-6-1-audit-review-analysis-and-reporting
+[AU-7]:au.html#au-7-audit-reduction-and-report-generation
+[AU-8]:au.html#au-8-time-stamps
+[AU-9]:au.html#au-9-protection-of-audit-information
+[CM-2]:cm.html#cm-2-baseline-configuration
+[CM-6]:cm.html#cm-6-configuration-settings
+[CM-7]:cm.html#cm-7-least-functionality
+[CM-8]:cm.html#cm-8-information-system-component-inventory
+[CP-9]:cp.html#cp-9-information-system-backup
+[IA-2]:ia.html#identification-and-authentication
+[IA-4]:ia.html#ia-4-identifier-management
+[IA-5]:ia.html#ia-5-authenticator-management
+[IR-2]:ir.html#ir-2-incident-response-training
+[IR-4]:ir.html#ir-4-incident-handling
+[IR-5]:ir.html#ir-5-incident-monitoring
+[IR-6]:ir.html#ir-6-incident-reporting
+[MA-4]:ma.html#maintenance
+[MA-5]:ma.html#ma-5-maintenance-personnel
+[MA-6]:ma.html#ma-6-timely-maintenance
+[MP-4]:mp.html#mp-4-media-storage
+[MP-6]:mp.html#mp-6-media-sanitization
+[PE-2]:pe.html#pe-2-physical-access-authorizations
+[PE-3]:pe.html#pe-3-physical-access-control
+[PE-5]:pe.html#pe-5-access-control-for-output-devices
+[PM-10]:pm.html#pm-10-security-authorization-process
+[RA-5]:ra.html#ra-5-vulnerability-scanning
+[SC-2]:sc.html#sc-2-application-partitioning
+[SC-4]:sc.html#sc-4-information-in-shared-resources
+[SC-7]:sc.html#sc-7-boundary-protection
+[SC-8]:sc.html#sc-8-transmission-confidentiality-and-integrity
+[SC-13]:sc.html#sc-13-cryptographic-protection
+[SC-15]:sc.html#sc-15-collaborative-computing-devices
+[SC-28]:sc.html#sc-28-protection-of-information-at-rest
+[SI-2]:si.html#si-2-flaw-remediation
+[SI-3]:si.html#si-3-malicious-code-protection
+[SI-4]:si.html#si-4-information-system-monitoring
+<div style="page-break-after:always;"></div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>%(page_title)s</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="%(author)s">
+<meta name="reviewer" content="%(reviewer)s">
+<meta name="status" content="%(status)s">
+<meta name="date" content="%(date)s">
+<meta name="generator" content="Python-Markdown">
+<meta name="prototype" content="Zimit-Framework">
+<link rel="metadata" href="md/%(meta)s" type="text/md">
+<link rel="stylesheet" type="text/css" href="css/zimit.min.css">
+<link rel="stylesheet" href="css/%(base)sdefault.css" type="text/css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scripsit.js"></script>
+<script src="js/ssp.js"></script></head>
+<body>
+ <header>
+  <nav>
+   <a class="site" href="index.html"><script>document.write(ssp.org.dba);</script></a>
+   <ul id="menu">
+    <li><a href="toc.html">Table of Contents</a></li>
+    <li><a href="index-doc.html">Documentation</a></li>
+    <li><a href="ac-2-doc.html" rel="nofollow">Authorized Users</a></li>
+    <li><a class="meta" href="#open">Metadata</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+    %(body)s
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: %(title)s<br>Source: <a href="%(source)s" rel="nofollow">%(source)s</a><br>Metadata: <a href="md/%(meta)s" rel="nofollow">%(meta)s</a><br>Author: %(author)s<br>Reviewer: %(reviewer)s<br>Status: %(status)s<br>Date: %(date)s</p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</body>
+</html>
