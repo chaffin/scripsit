@@ -6,43 +6,43 @@ var ssp = {
     "reference": "",
     "comments": "Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted.",
     "a": {
-      "control": "[Assignment: <b>CCI-000002</b> organization-defined personnel or roles]",
-      "CCI-000002": "The organization disseminates the access control policy to organization-defined personnel or roles."
+      "CCI-000002": "The organization disseminates the access control policy to organization-defined personnel or roles.",
+      "control": "[Assignment: <b>CCI-000002</b> organization-defined personnel or roles]"
     },
     "b1": {
-      "control": "[Assignment: <b>CCI-000003</b> organization-defined frequency]",
-      "CCI-000003": "The organization reviews and updates the access control policy in accordance with organization-defined frequency."
+      "CCI-000003": "The organization reviews and updates the access control policy in accordance with organization-defined frequency.",
+      "control": "[Assignment: <b>CCI-000003</b> organization-defined frequency]"
     },
     "b2": {
-      "control": "[Assignment: <b>CCI-000006</b> organization-defined frequency]",
-      "CCI-000006": "The organization reviews and updates the access control procedures in accordance with organization-defined frequency."
+      "CCI-000006": "The organization reviews and updates the access control procedures in accordance with organization-defined frequency.",
+      "control": "[Assignment: <b>CCI-000006</b> organization-defined frequency]"
     }
-},
+  },
   "ac2": {
-    "control": "common",
+    "control": "Common",
     "author": "Larry Chaffin",
     "date": "2015-11-01",
     "reference": "",
     "comments": "Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted.",
     "a": {
-      "control": "[Assignment: <b>CCI-000007</b> organization-defined information system account types]",
-      "CCI-000007": "The organization manages information system accounts by identifying \naccount types (i.e., individual, group, system, application, \nguest/anonymous, and temporary)."
+      "CCI-000007": "The organization manages information system accounts by identifying \naccount types (i.e., individual, group, system, application, \nguest/anonymous, and temporary).",
+      "control": "[Assignment: <b>CCI-000007</b> organization-defined information system account types]"
     },
     "e": {
-      "control": "[Assignment: <b>CCI-000010</b> organization-defined personnel or roles]",
-      "CCI-000010": "The organization requires approvals by organization-defined personnel or\n roles for requests to create information system accounts."
+      "CCI-000010": "The organization requires approvals by organization-defined personnel or\n roles for requests to create information system accounts.",
+      "control": "[Assignment: <b>CCI-000010</b> organization-defined personnel or roles]"
     },
     "f": {
-      "control": "[Assignment: <b>3</b> organization-defined procedures or conditions]",
-      "CCI": ""
+      "CCI": "",
+      "control": "[Assignment: <b>3</b> organization-defined procedures or conditions]"
     },
     "j": {
-      "control": "[Assignment: <b>CCI-000012</b> organization-defined frequency]",
-      "CCI-000012": "The organization reviews information system accounts for compliance with\n account management requirements per organization-defined frequency."
+      "CCI-000012": "The organization reviews information system accounts for compliance with\n account management requirements per organization-defined frequency.",
+      "control": "[Assignment: <b>CCI-000012</b> organization-defined frequency]"
     }
 },
   "org": {
-    "name": "The Company Name, Inc.",
+    "name": "The Company Aerospace Name, Inc.",
     "dba": "Company Name",
     "cage": 12345,
     "address": {

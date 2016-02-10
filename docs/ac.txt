@@ -13,9 +13,9 @@ prev_url:    ia.html
 [AC-2 Account Management] [ac-2.md]
 -----------------------
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:
+**Control:** <mark><script>document.write(org.name);</script></mark>:
 
-a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: <mark><script>document.write(ssp.ac2a);</script></mark>;  
+a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: <mark><script>document.write(ssp.ac2.a.control);</script></mark>;  
 
 b. Assigns account managers for information system accounts;  
 
@@ -23,9 +23,9 @@ c. Establishes conditions for group and role membership;
 
 d. Specifies [authorized users] [id-1] of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;  
 
-e. Requires approvals by <mark><script>document.write(ssp.ac2e);</script></mark> for requests to create information system accounts;  
+e. Requires approvals by <mark><script>document.write(ssp.ac2.e.control);</script></mark> for requests to create information system accounts;  
 
-f. Creates, enables, modifies, disables, and removes information system accounts in accordance with <mark><script>document.write(ssp.ac2f);</script></mark>;  
+f. Creates, enables, modifies, disables, and removes information system accounts in accordance with <mark><script>document.write(ssp.ac2.f.control);</script></mark>;  
 
 g. Monitors the use of information system accounts;
 
@@ -39,9 +39,9 @@ i. Authorizes access to the information system based on:
 
   1. A valid access authorization;  
   2. Intended system usage; and  
-  3. Other attributes as required by <mark><script>document.write(cdc.dba);</script></mark> or associated missions/business functions;  
+  3. Other attributes as required by <mark><script>document.write(org.dba);</script></mark> or associated missions/business functions;  
   
-j. Reviews accounts for compliance with account management requirements <mark><script>document.write(ssp.ac2j);</script></mark>; and  
+j. Reviews accounts for compliance with account management requirements <mark><script>document.write(ssp.ac2.j.control);</script></mark>; and  
 
 k. Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.  
 
@@ -104,7 +104,7 @@ AC-4 Information Flow
 AC-6 Least Privilege
 --------------------
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark> employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.
+**Control:** <mark><script>document.write(org.name);</script></mark> employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.
 
 **Supplemental Guidance** 
 
@@ -163,7 +163,7 @@ The information system conceals, via the session lock, information previously vi
 
 # AC-17 REMOTE ACCESS
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:
+**Control:** <mark><script>document.write(org.name);</script></mark>:
 
 a. Establishes and documents usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and
 
@@ -196,7 +196,7 @@ The information system implements cryptographic mechanisms to protect the confid
 
 # AC-18 WIRELESS ACCESS 
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:  
+**Control:** <mark><script>document.write(org.name);</script></mark>:  
 
 a. Establishes usage restrictions, configuration/connection requirements, and implementation guidance for wireless access; and
 
@@ -227,7 +227,7 @@ The information system protects wireless access to the system using authenticati
 AC-19 Access Control for Mobile Devices
 ---------------------------------------
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:
+**Control:** <mark><script>document.write(org.name);</script></mark>:
 
 a. Establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices; and
 
@@ -244,7 +244,7 @@ b. Authorizes the connection of mobile devices to organizational information sys
 
 # AC-20 USE OF EXTERNAL INFORMATION SYSTEMS
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark> establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:
+**Control:** <mark><script>document.write(org.name);</script></mark> establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:
 
 a. Access the information system from external information systems; and
 
@@ -268,9 +268,9 @@ AC-20(1) Use of External Information Systems
 
 **LIMITS ON AUTHORIZED USE**
 
-<mark><script>document.write(cdc.name);</script></mark> permits authorized individuals to use an external information system to access the information system or to process, store, or transmit organization-controlled information only when <mark><script>document.write(cdc.dba);</script></mark>:
+<mark><script>document.write(org.name);</script></mark> permits authorized individuals to use an external information system to access the information system or to process, store, or transmit organization-controlled information only when <mark><script>document.write(org.dba);</script></mark>:
 
-(a) Verifies the implementation of required security controls on the external system as specified in <mark><script>document.write(cdc.dba);</script></mark>'s information security policy and [security plan] [AC-17]; or
+(a) Verifies the implementation of required security controls on the external system as specified in <mark><script>document.write(org.dba);</script></mark>'s information security policy and [security plan] [AC-17]; or
 
 (b) Retains approved information system connection or processing agreements with the organizational entity hosting the external information system.
 
@@ -288,7 +288,7 @@ AC-20(2) Use of External Information Systems
 
 **PORTABLE STORAGE DEVICES**
 
-<mark><script>document.write(cdc.name);</script></mark> <mark><script>document.write(ssp.ac202);</script></mark> the use of organization-controlled portable storage devices by authorized individuals on external information systems.
+<mark><script>document.write(org.name);</script></mark> <mark><script>document.write(ssp.ac202);</script></mark> the use of organization-controlled portable storage devices by authorized individuals on external information systems.
 
 **Supplemental Guidance** 
 
@@ -298,9 +298,9 @@ AC-20(2) Use of External Information Systems
 AC-22 Publicly Accessible Content
 ---------------------------------
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:  
+**Control:** <mark><script>document.write(org.name);</script></mark>:  
 
-a. Designates [individuals authorized][doc_ac-22] to post information onto a publicly accessible information system;
+a. Designates [individuals authorized][ac-22-doc] to post information onto a publicly accessible information system;
 
 b. Trains authorized individuals to ensure that publicly accessible information does not contain nonpublic information;
 
@@ -370,6 +370,6 @@ d. Reviews the content on the publicly accessible information system for nonpubl
 [ac-2.md]:md/ac-2.md
 [ac-3.md]:md/ac-3.md
 [ac-34.md]:md/ac-34.md
-[doc_ac-22]:doc_ac-22.html
+[ac-22-doc]:ac-22-doc.html
 
 <div style="page-break-after:always;"></div>

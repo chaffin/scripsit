@@ -5,7 +5,7 @@
 # compile metadata into .htm files
 # compile all .html file into one doc_ssp.html
 #
-echo "====================================" >> UPDATES
+echo "======" >> UPDATES
 echo "============= `date` ===============" >> UPDATES
 zip -r build.zip build/docs &&
 ./BuildJSON.sh &&

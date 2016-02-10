@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Risk Management Framework &#8212; RMF</title>
+<meta charset=utf-8>
+<meta name="author" content="Larry Chaffin">
+<meta name="reviewer" content="none">
+<meta name="status" content="draft">
+<meta name="date" content="2015-10-18">
+<meta name="generator" content="Python-Markdown">
+<link rel="metadata" href="md/index.md.txt" type="text/md">
+<link rel="stylesheet" href="css/document.css" type=text/css>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scripsit.js"></script>
+<script src="json/ssp.json"></script>
+<script src="json/cdc.json"></script>
+</head>
+<body>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<dd>
+<p>CA-6</p>
+</dd>
+<dt><strong>References</strong> </dt>
+<dd>
+<p>NIST Special Publications 800-37, 800-39.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Program Management<br>Source: <a href="pm.txt" rel="nofollow">pm.txt</a><br>Metadata: <a href="md/pm.md.htm" rel="nofollow">pm.md.htm</a><br>Author: Larry Chaffin<br>Reviewer: <br>Status: draft<br>Date: 2015-10-26</p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>CA-2, CA-7, CM-4, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, RA-2, RA-3, SA-11, <a href="si.html#si-2-flaw-remediation">SI-2</a>.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Risk Assessment<br>Source: <a href="ra.txt" rel="nofollow">ra.txt</a><br>Metadata: <a href="md/ra.md.htm" rel="nofollow">ra.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</li>
+<li>
+<p>Controlling ingress/egress to the facility using <span id="highlight"><script>document.write(ssp.pe3a2);</script></span>;</p>
+</li>
+</ol>
+<p>b. Maintains physical access audit logs for <span id="highlight"><script>document.write(ssp.pe3b);</script></span>;</p>
+<p>c. Provides <span id="highlight"><script>document.write(ssp.pe3c);</script></span> to control access to areas within the facility officially designated as publicly accessible;</p>
+<p>d. Escorts visitors and monitors visitor activity <span id="highlight"><script>document.write(ssp.pe3d);</script></span>;</p>
+<p>e. Secures keys, combinations, and other physical access devices;</p>
+<p>f. Inventories <span id="highlight"><script>document.write(ssp.pe3f1);</script></span> every <span id="highlight"><script>document.write(ssp.pe3f2);</script></span>; and</p>
+<p>g. Changes combinations and keys <span id="highlight"><script>document.write(ssp.pe3g);</script></span> and/or when keys are lost, combinations are compromised, or individuals are transferred or terminated.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control applies to organizational employees and visitors. Individuals (e.g., employees, contractors, and others) with permanent physical access authorization credentials are not considered visitors. Organizations determine the types of facility guards needed including, for example, professional physical security staff or other personnel such as administrative staff or information system users. Physical access devices include, for example, keys, locks, combinations, and card readers. Safeguards for publicly accessible areas within organizational facilities include, for example, cameras, monitoring by guards, and isolating selected information systems and/or system components in secured areas. Physical access control systems comply with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. The Federal Identity, Credential, and Access Management Program provides implementation guidance for identity, credential, and access management capabilities for physical access control systems. Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural (e.g., a written log of individuals accessing the facility and when such access occurred), automated (e.g., capturing ID provided by a PIV card), or some combination thereof. Physical access points can include facility access points, interior access points to information systems and/or components requiring supplemental access controls, or both. Components of organizational information systems (e.g., workstations, terminals) may be located in areas designated as publicly accessible with organizations safeguarding access to such devices. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="au.html#au-2-audits-events">AU-2</a>, <a href="au.html#au-6-1-audit-review-analysis-and-reporting">AU-6</a>, MP-2, <a href="mp.html#mp-4-media-storage">MP-4</a>, <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a>, PE-4, <a href="pe.html#pe-5-access-control-for-output-devices">PE-5</a>, PS-3, RA-3.</p>
+</dd>
+</dl>
+<h2 id="pe-5-access-control-for-output-devices">PE-5 Access Control for Output Devices<a class="headerlink" href="#pe-5-access-control-for-output-devices" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> controls physical access to information system output devices to prevent unauthorized individuals from obtaining the output.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Controlling physical access to output devices includes, for example, placing output devices in locked rooms or other secured areas and allowing access to authorized individuals only, and placing output devices in locations that can be monitored by organizational personnel. Monitors, printers, copiers, scanners, facsimile machines, and audio devices are examples of information system output devices. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="pe.html#pe-2-physical-access-authorizations">PE-2</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, PE-4, PE-18.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Physical and Environmental Protection<br>Source: <a href="pe.txt" rel="nofollow">pe.txt</a><br>Metadata: <a href="md/pe.md.htm" rel="nofollow">pe.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Contingency Planning<br>Source: <a href="cp.txt" rel="nofollow">cp.txt</a><br>Metadata: <a href="md/cp.md.htm" rel="nofollow">cp.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>AC-19, <a href="cm.html#cm-2-baseline-configuration">CM-2</a>, CM-3, <a href="cm.html#cm-7-least-functionality">CM-7</a>, SI-4.</p>
+</dd>
+</dl>
+<h2 id="cm-7-least-functionality">CM-7 Least Functionality<a class="headerlink" href="#cm-7-least-functionality" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Configures the information system to provide only essential capabilities; and</p>
+<p>b. Prohibits or restricts the use of the following functions, ports, protocols, and/or services: <span id="highlight"><script>document.write(ssp.cm7b);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Information systems can provide a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). Additionally, it is sometimes convenient to provide multiple services from single information system components, but doing so increases risk over limiting the services provided by any one component. Where feasible, organizations limit component functionality to a single function per device (e.g., email servers or web servers, but not both). Organizations review functions and services provided by information systems or individual components of information systems, to determine which functions and services are candidates for elimination (e.g., Voice Over Internet Protocol, Instant Messaging, auto-execute, and file sharing). Organizations consider disabling unused or unnecessary physical and logical ports/protocols (e.g., Universal Serial Bus, File Transfer Protocol, and Hyper Text Transfer Protocol) on information systems to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling. Organizations can utilize network scanning tools, intrusion detection and prevention systems, and end-point protections such as firewalls and host-based intrusion detection systems to identify and prevent the use of prohibited functions, ports, protocols, and services. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>AC-6, <a href="cm.html#cm-2-baseline-configuration">CM-2</a>, RA-5, SA-5, SC-7.</p>
+</dd>
+</dl>
+<h2 id="cm-8-information-system-component-inventory">CM-8 Information System Component Inventory<a class="headerlink" href="#cm-8-information-system-component-inventory" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:  </p>
+<p>a. Develops and documents an inventory of information system components that:</p>
+<ol>
+<li>Accurately reflects the current information system;</li>
+<li>Includes all components within the authorization boundary of the information system;</li>
+<li>Is at the level of granularity deemed necessary for tracking and reporting; and</li>
+<li>Includes <span id="highlight"><script>document.write(ssp.cm8a4);</script></span>; and</li>
+</ol>
+<p>b. Reviews and updates the information system component inventory <span id="highlight"><script>document.write(ssp.cm8b);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizations may choose to implement centralized information system component inventories that include components from all organizational information systems. In such situations, organizations ensure that the resulting inventories include system-specific information required for proper component accountability (e.g., information system association, information system owner). Information deemed necessary for effective accountability of information system components includes, for example, hardware inventory specifications, software license information, software version numbers, component owners, and for networked components or devices, machine names and network addresses. Inventory specifications include, for example, manufacturer, device type, model, serial number, and physical location. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="cm.html#cm-2-baseline-configuration">CM-2</a>, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, PM-5.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Configuration Management<br>Source: <a href="cm.txt" rel="nofollow">cm.txt</a><br>Metadata: <a href="md/cm.md.htm" rel="nofollow">cm.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>None</p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h2 id="ma-5-maintenance-personnel">MA-5 Maintenance Personnel<a class="headerlink" href="#ma-5-maintenance-personnel" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>: </p>
+<p>a. Establishes a process for maintenance personnel authorization and maintains a list of authorized maintenance organizations or personnel;</p>
+<p>b. Ensures that non-escorted personnel performing maintenance on the information system have required access authorizations; and</p>
+<p>c. Designates organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control applies to individuals performing hardware or software maintenance on organizational information systems, while <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a> addresses physical access for individuals whose maintenance duties place them within the physical protection perimeter of the systems (e.g., custodial staff, physical plant maintenance personnel). Technical competence of supervising individuals relates to the maintenance performed on the information systems while having required access authorizations refers to maintenance on and near the systems. Individuals not previously identified as authorized maintenance personnel, such as information technology manufacturers, vendors, systems integrators, and consultants, may require privileged access to organizational information systems, for example, when required to conduct maintenance activities with little or no notice. Based on organizational assessments of risk, organizations may issue temporary credentials to these individuals. Temporary credentials may be for one-time use or for very limited time periods. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, IA-8, MP-2, <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, PE-4, RA-3.</p>
+</dd>
+</dl>
+<h2 id="ma-6-timely-maintenance">MA-6 Timely Maintenance<a class="headerlink" href="#ma-6-timely-maintenance" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> obtains maintenance support and/or spare parts for <span id="highlight"><script>document.write(ssp.ma61);</script></span> within <span id="highlight"><script>document.write(ssp.ma62);</script></span> of failure.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizations specify the information system components that result in increased risk to organizational operations and assets, individuals, other organizations, or the Nation when the functionality provided by those components is not operational. Organizational actions to obtain maintenance support typically include having appropriate contracts in place. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="cm.html#cm-8-information-system-component-inventory">CM-8</a>, CP-2, CP-7, SA-14, SA-15.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Maintenance<br>Source: <a href="ma.txt" rel="nofollow">ma.txt</a><br>Metadata: <a href="md/ma.md.htm" rel="nofollow">ma.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<li>
+<p>Perform periodic scans of the information system <span id="highlight"><script>document.write(ssp.si3cx1);</script></span> and real-time scans of files from external sources at <span id="highlight"><script>document.write(ssp.si3cx2);</script></span> as the files are downloaded, opened, or executed in accordance with organizational security policy; and</p>
+</li>
+<li>
+<p><span id="highlight"><script>document.write(ssp.si3c2);</script></span> in response to malicious code detection; and</p>
+</li>
+</ol>
+<p>d. Addresses the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the information system.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd>
+<p>Information system entry and exit points include, for example, firewalls, electronic mail servers, web servers, proxy servers, remote-access servers, workstations, notebook computers, and mobile devices. Malicious code includes, for example, viruses, worms, Trojan horses, and spyware. Malicious code can also be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using steganography. Malicious code can be transported by different means including, for example, web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of information system vulnerabilities. Malicious code protection mechanisms include, for example, anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include, for example, logic bombs, back doors, and other types of cyber attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including, for example, secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. Organizations may determine that in response to the detection of malicious code, different actions may be warranted. For example, organizations can define actions in response to malicious code detection during periodic scans, actions in response to detection of malicious downloads, and/or actions in response to detection of maliciousness when attempting to open or execute files. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>CM-3, MP-2, SA-4, SA-8, SA-12, SA-13, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, SC-26, SC-44, <a href="si.html#si-2-flaw-remediation">SI-2</a>, <a href="si.html#si-4-information-system-monitoring">SI-4</a>, SI-7.</p>
+</dd>
+</dl>
+<h2 id="si-4-information-system-monitoring">SI-4 Information System Monitoring<a class="headerlink" href="#si-4-information-system-monitoring" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Monitors the information system to detect:</p>
+<ol>
+<li>
+<p>Attacks and indicators of potential attacks in accordance with <span id="highlight"><script>document.write(ssp.si4a1);</script></span>; and</p>
+</li>
+<li>
+<p>Unauthorized local, network, and remote connections;</p>
+</li>
+</ol>
+<p>b. Identifies unauthorized use of the information system through <span id="highlight"><script>document.write(ssp.si4b);</script></span>;</p>
+<p>c. Deploys monitoring devices: (i) strategically within the information system to collect organization-determined essential information; and (ii) at ad hoc locations within the system to track specific types of transactions of interest to <span id="highlight"><script>document.write(cdc.dba);</script></span>;</p>
+<p>d. Protects information obtained from intrusion-monitoring tools from unauthorized access, modification, and deletion;</p>
+<p>e. Heightens the level of information system monitoring activity whenever there is an indication of increased risk to organizational operations and assets, individuals, other organizations, or the Nation based on law enforcement information, intelligence information, or other credible sources of information;</p>
+<p>f. Obtains legal opinion with regard to information system monitoring activities in accordance with applicable federal laws, Executive Orders, directives, policies, or regulations; and</p>
+<p>g. Provides <span id="highlight"><script>document.write(ssp.si4gx1);</script></span> to <span id="highlight"><script>document.write(ssp.si4gx2);</script></span>; <span id="highlight"><script>document.write(ssp.si4gx3);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Information system monitoring includes external and internal monitoring. External monitoring includes the observation of events occurring at the information system boundary (i.e., part of perimeter defense and boundary protection). Internal monitoring includes the observation of events occurring within the information system. Organizations can monitor information systems, for example, by observing audit activities in real time or by observing other system aspects such as access patterns, characteristics of access, and other actions. The monitoring objectives may guide determination of the events. Information system monitoring capability is achieved through a variety of tools and techniques (e.g., intrusion detection systems, intrusion prevention systems, malicious code protection software, scanning tools, audit record monitoring software, network monitoring software). Strategic locations for monitoring devices include, for example, selected perimeter locations and near server farms supporting critical applications, with such devices typically being employed at the managed interfaces associated with controls SC-7 and AC-17. Einstein network monitoring devices from the Department of Homeland Security can also be included as monitoring devices. The granularity of monitoring information collected is based on organizational monitoring objectives and the capability of information systems to support such objectives. Specific types of transactions of interest include, for example, Hyper Text Transfer Protocol (HTTP) traffic that bypasses HTTP proxies. Information system monitoring is an integral part of organizational continuous monitoring and incident response programs. Output from system monitoring serves as input to continuous monitoring and incident response programs. A network connection is any connection with a device that communicates through a network (e.g., local area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet). Local, network, and remote connections can be either wired or wireless. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-4-information-flow">AC-4</a>, AC-8, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="au.html#au-2-audits-events">AU-2</a>, <a href="au.html#au-6-1-audit-review-analysis-and-reporting">AU-6</a>, <a href="au.html#au-7-audit-reduction-and-report-generation">AU-7</a>, <a href="au.html#au-9-protection-of-audit-information">AU-9</a>, AU-12, CA-7, <a href="ir.html#ir-4-incident-handling">IR-4</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, <a href="ra.html#ra-5-vulnerability-scanning">RA-5</a>, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, SC-26, SC-35, <a href="si.html#si-3-malicious-code-protection">SI-3</a>, SI-7.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: System & Information Integrity<br>Source: <a href="si.txt" rel="nofollow">si.txt</a><br>Metadata: <a href="md/si.md.htm" rel="nofollow">si.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>MA-2, <a href="ma.html#maintenance">MA-4</a>, RA-3, <a href="sc.html#sc-4-information-in-shared-resources">SC-4</a>.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Media Protection<br>Source: <a href="mp.txt" rel="nofollow">mp.txt</a><br>Metadata: <a href="md/mp.md.htm" rel="nofollow">mp.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<dd>
+<p>Organizations recognize that incident response capability is dependent on the capabilities of organizational information systems and the mission/business processes being supported by those systems. Therefore, organizations consider incident response as part of the definition, design, and development of mission/business processes and information systems. Incident-related information can be obtained from a variety of sources including, for example, audit monitoring, network monitoring, physical access monitoring, user/administrator reports, and reported supply chain events. Effective incident handling capability includes coordination among many organizational entities including, for example, mission/business owners, information system owners, authorizing officials, human resources offices, physical and personnel security offices, legal departments, operations personnel, procurement offices, and the risk executive (function). </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="au.html#au-6-1-audit-review-analysis-and-reporting">AU-6</a>, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, CP-2, CP-4, <a href="ir.html#ir-2-incident-response-training">IR-2</a>, IR-3, IR-8, PE-6, SC-5, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, <a href="si.html#si-3-malicious-code-protection">SI-3</a>, <a href="si.html#si-4-information-system-monitoring">SI-4</a>, SI-7.</p>
+</dd>
+</dl>
+<h2 id="ir-5-incident-monitoring">IR-5 Incident Monitoring<a class="headerlink" href="#ir-5-incident-monitoring" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> tracks and documents information system security incidents.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Documenting information system security incidents includes, for example, maintaining records about each incident, the status of the incident, and other pertinent information necessary for forensics, evaluating incident details, trends, and handling. Incident information can be obtained from a variety of sources including, for example, incident reports, incident response teams, audit monitoring, network monitoring, physical access monitoring, and user/administrator reports. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="au.html#au-6-1-audit-review-analysis-and-reporting">AU-6</a>, IR-8, PE-6, SC-5, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, <a href="si.html#si-3-malicious-code-protection">SI-3</a>, <a href="si.html#si-4-information-system-monitoring">SI-4</a>, SI-7.</p>
+</dd>
+</dl>
+<h2 id="ir-6-incident-reporting">IR-6 Incident Reporting<a class="headerlink" href="#ir-6-incident-reporting" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span>:</p>
+<p>a. Requires personnel to report suspected security incidents to the organizational incident response capability within <span id="highlight"><script>document.write(ssp.ir6a);</script></span>; and</p>
+<p>b. Reports security incident information to <span id="highlight"><script>document.write(ssp.ir6b);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>The intent of this control is to address both specific incident reporting requirements within an organization and the formal incident reporting requirements for federal agencies and their subordinate organizations. Suspected security incidents include, for example, the receipt of suspicious email communications that can potentially contain malicious code. The types of security incidents reported, the content and timeliness of the reports, and the designated reporting authorities reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Current federal policy requires that all federal agencies (unless specifically exempted from such requirements) report security incidents to the United States Computer Emergency Readiness Team (US-CERT) within specified time frames designated in the US-CERT Concept of Operations for Federal Cyber Security Incident Handling. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ir.html#ir-4-incident-handling">IR-4</a>, <a href="ir.html#ir-5-incident-monitoring">IR-5</a>, IR-8.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Incident Response<br>Source: <a href="ir.txt" rel="nofollow">ir.txt</a><br>Metadata: <a href="md/ir.md.htm" rel="nofollow">ir.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<dd>
+<p>This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the AT family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures.</p>
+</dd>
+<dt><strong>Related control</strong></dt>
+<dd>
+<p>PM-9</p>
+</dd>
+</dl>
+<h2 id="at-2-security-awareness-training">AT-2 Security Awareness Training<a class="headerlink" href="#at-2-security-awareness-training" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark> provides basic security awareness training to information system users (including managers, senior executives, and contractors):  </p>
+<p>a. As part of initial training for new users;</p>
+<p>b. When required by information system changes; and</p>
+<p>c. <mark><script>document.write(ssp.at2c);</script></mark> thereafter.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizations determine the appropriate content of security awareness training and security awareness techniques based on the specific organizational requirements and the information systems to which personnel have authorized access. The content includes a basic understanding of the need for information security and user actions to maintain security and to respond to suspected security incidents. The content also addresses awareness of the need for operations security. Security awareness techniques can include, for example, displaying posters, offering supplies inscribed with security reminders, generating email advisories/notices from senior organizational officials, displaying logon screen messages, and conducting information security awareness events. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>AT-3, AT-4, PL-4.</p>
+</dd>
+</dl>
+<h2 id="at-22-insider-threat">AT-2(2) Insider Threat<a class="headerlink" href="#at-22-insider-threat" title="Permanent link">&para;</a></h2>
+<p>The organization includes security awareness training on recognizing and reporting potential indicators of insider threat.</p>
+<dl>
+<dt><strong> Supplemental Guidance</strong></dt>
+<dd>
+<p>Potential indicators and possible precursors of insider threat can include behaviors such as inordinate, long-term job dissatisfaction, attempts to gain access to information not required for job performance, unexplained access to financial resources, bullying or sexual harassment of fellow employees, workplace violence, and other serious violations of organizational policies, procedures, directives, rules, or practices. Security awareness training includes how to communicate employee and management concerns regarding potential indicators of insider threat through appropriate organizational channels in accordance with established organizational policies and procedures.</p>
+</dd>
+<dt><strong> Related controls</strong></dt>
+<dd>
+<p>PL-4, PM-12, PS-3, PS-6.</p>
+</dd>
+<dt><strong> References</strong></dt>
+<dd>
+<p><ul><li>C.F.R. Part 5 Subpart C (5 C.F.R. 930.301)</li><li>Executive Order 13587</li><li>NIST Special Publication 800-50</li></ul></p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Security Awareness Training<br>Source: <a href="at.txt" rel="nofollow">at.txt</a><br>Metadata: <a href="md/at.md.htm" rel="nofollow">at.md.htm</a><br>Author: Larry Chaffin<br>Reviewer: <br>Status: draft<br>Date: 2015-10-26</p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<p>Common device identifiers include, for example, media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared information system accounts (e.g., guest and anonymous accounts). Typically, individual identifiers are the user names of the information system accounts assigned to those individuals. In such instances, the account management activities of <a href="ac.html#ac-2-account-management">AC-2</a> use account names provided by <a href="ia.html#ia-4-identifier-management">IA-4</a>. <br /><br />This control also addresses individual identifiers not necessarily associated with information system accounts (e.g., identifiers used in physical security control databases accessed by badge reader systems for access to information systems). Preventing reuse of identifiers implies preventing the assignment of previously used individual, group, role, or device identifiers to different individuals, groups, roles, or devices. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, IA-3, <a href="ia.html#ia-5-authenticator-management">IA-5</a>, IA-8, SC-37.</p>
+</dd>
+</dl>
+<h2 id="ia-5-authenticator-management">IA-5 Authenticator Management<a class="headerlink" href="#ia-5-authenticator-management" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <span id="highlight"><script>document.write(cdc.name);</script></span> manages information system authenticators by:</p>
+<p>a. Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator;</p>
+<p>b. Establishing initial authenticator content for authenticators defined by <span id="highlight"><script>document.write(cdc.dba);</script></span>;</p>
+<p>c. Ensuring that authenticators have sufficient strength of mechanism for their intended use;</p>
+<p>d. Establishing and implementing administrative procedures for initial authenticator distribution, for lost/compromised or damaged authenticators, and for revoking authenticators;</p>
+<p>e. Changing default content of authenticators prior to information system installation;</p>
+<p>f. Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators;</p>
+<p>g. Changing/refreshing authenticators <span id="highlight"><script>document.write(ssp.ia5g);</script></span>;</p>
+<p>h. Protecting authenticator content from unauthorized disclosure and modification;</p>
+<p>i. Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators; and</p>
+<p>j. Changing authenticators for group/role accounts when membership to those accounts changes.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Individual authenticators include, for example, passwords, tokens, biometrics, PKI certificates, and key cards. Initial authenticator content is the actual content (e.g., the initial password) as opposed to requirements about authenticator content (e.g., minimum password length). In many cases, developers ship information system components with factory default authentication credentials to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant security risk. The requirement to protect individual authenticators may be implemented via control PL-4 or PS-6 for authenticators in the possession of individuals and by controls <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, and <a href="sc.html#sc-28-protection-of-information-at-rest">SC-28</a> for authenticators stored within organizational information systems (e.g., passwords stored in hashed or encrypted formats, files containing encrypted or hashed passwords accessible with administrator privileges). Information systems support individual authenticator management by organization-defined settings and restrictions for various authenticator characteristics including, for example, minimum password length, password composition, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication.<br /><br />Specific actions that can be taken to safeguard authenticators include, for example, maintaining possession of individual authenticators, not loaning or sharing individual authenticators with others, and reporting lost, stolen, or compromised authenticators immediately. Authenticator management includes issuing and revoking, when no longer needed, authenticators for temporary access such as that required for remote maintenance. Device authenticators include, for example, certificates and passwords. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, <a href="ia.html#ia-4-identifier-management">IA-4</a>, IA-8, PL-4, PS-5, PS-6, SC-12, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>, SC-17, <a href="sc.html#sc-28-protection-of-information-at-rest">SC-28</a>.</p>
+</dd>
+</dl>
+<h2 id="ia-51-authentication-management">IA-5(1) Authentication Management<a class="headerlink" href="#ia-51-authentication-management" title="Permanent link">&para;</a></h2>
+<p><strong>PASSWORD-BASED AUTHENTICATION</strong></p>
+<p>The information system, for password-based authentication:</p>
+<p>(a) Enforces minimum password complexity of <span id="highlight"><script>document.write(ssp.ia51a);</script></span>;</p>
+<p>(b) Enforces at least the following number of changed characters when new passwords are created: <span id="highlight"><script>document.write(ssp.ia51b);</script></span>;</p>
+<p>(c) Stores and transmits only cryptographically-protected passwords;</p>
+<p>(d) Enforces password minimum and maximum lifetime restrictions of <span id="highlight"><script>document.write(ssp.ia51d);</script></span>;</p>
+<p>(e) Prohibits password reuse for <span id="highlight"><script>document.write(ssp.ia51e);</script></span> generations; and</p>
+<p>(f) Allows the use of a temporary password for system logons with an immediate change to a permanent password.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control enhancement applies to single-factor authentication of individuals using passwords as individual or group authenticators, and in a similar manner, when passwords are part of multifactor authenticators. This control enhancement does not apply when passwords are used to unlock hardware authenticators (e.g., Personal Identity Verification cards). The implementation of such password mechanisms may not meet all of the requirements in the enhancement.<br /><br />Cryptographically-protected passwords include, for example, encrypted versions of passwords and one-way cryptographic hashes of passwords. The number of changed characters refers to the number of changes required with respect to the total number of positions in the current password. Password lifetime restrictions do not apply to temporary passwords. To mitigate certain brute force attacks against passwords, organizations may also consider salting passwords. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p>IA-6.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Identification And Authentication<br>Source: <a href="ia.txt" rel="nofollow">ia.txt</a><br>Metadata: <a href="md/ia.md.htm" rel="nofollow">ia.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<p>k. Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.  </p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd><p>Information system account types include, for example, individual, shared, group, system, guest/anonymous, emergency, developer/manufacturer/vendor, temporary, and service. Some of the account management requirements listed above can be implemented by organizational information systems. The identification of authorized users of the information system and the specification of access privileges reflects the requirements in other security controls in the [security plan]. Users requiring administrative privileges on information system accounts receive additional scrutiny by appropriate organizational personnel (e.g., system owner, mission/business owner, or chief information security officer) responsible for approving such accounts and privileged access.</p><p>Organizations may choose to define access privileges or other attributes by account, by type of account, or a combination of both. Other attributes required for authorizing access include, for example, restrictions on time-of-day, day-of-week, and point-of-origin. In defining other account attributes, organizations consider system-related requirements (e.g., scheduled maintenance, system upgrades) and mission/business requirements, (e.g., time zone differences, customer requirements, remote access to support travel requirements). Failure to consider these factors could affect information system availability. Temporary and emergency accounts are accounts intended for short-term use. Organizations establish temporary accounts as a part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation.</p><p>Organizations establish emergency accounts in response to crisis situations and with the need for rapid account activation. Therefore, emergency account activation may bypass normal account authorization processes. Emergency and temporary accounts are not to be confused with infrequently used accounts (e.g., local logon accounts used for special tasks defined by organizations or when network resources are unavailable). Such accounts remain available and are not subject to automatic disabling or removal dates. Conditions for disabling or deactivating accounts include, for example: (i) when shared/group, emergency, or temporary accounts are no longer required; or (ii) when individuals are transferred or terminated. Some types of information system accounts may require specialized training.</p></dd>
+<dt><strong>Related controls</strong></dt>
+<dd><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-4-information-flow">AC-4</a>, AC-5, <a href="ac.html#ac-6-least-privilege">AC-6</a>, AC-10, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, <a href="ac.html#ac-20-use-of-external-information-systems">AC-20</a>, <a href="au.html#au-9-protection-of-audit-information">AU-9</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, <a href="ia.html#ia-4-identifier-management">IA-4</a>, <a href="ia.html#ia-5-authenticator-management">IA-5</a>, IA-8, CM-5, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, CM-11, MA-3, <a href="ma.html#maintenance">MA-4</a>, <a href="ma.html#ma-5-maintenance-personnel">MA-5</a>, PL-4, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</dd>
+</dl>
+<h1 id="ac-3-access-enforcement"><a href="md/ac-3.md">AC-3 ACCESS ENFORCEMENT</a><a class="headerlink" href="#ac-3-access-enforcement" title="Permanent link">&para;</a></h1>
+<p><strong>Control:</strong> The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Access control policies (e.g., identity-based policies, role-based policies, control matrices, cryptography) control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (e.g., devices, files, records, domains) in information systems. In addition to enforcing authorized access at the information system level and recognizing that information systems can host many applications and services in support of organizational missions and business operations, access enforcement mechanisms can also be employed at the application and service level to provide increased information security.</p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-4-information-flow">AC-4</a>, AC-5, <a href="ac.html#ac-6-least-privilege">AC-6</a>, AC-16, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-18-wireless-access">AC-18</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, <a href="ac.html#ac-20-use-of-external-information-systems">AC-20</a>, AC-21, <a href="ac.html#ac-22-publicly-accessible-content">AC-22</a>, <a href="au.html#au-9-protection-of-audit-information">AU-9</a>, CM-5, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, CM-11, MA-3, <a href="ma.html#maintenance">MA-4</a>, <a href="ma.html#ma-5-maintenance-personnel">MA-5</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>.</p>
+</dd>
+</dl>
+<h2 id="ac-34-access-enforcement"><a href="md/ac-34.md">AC-3(4) Access Enforcement</a><a class="headerlink" href="#ac-34-access-enforcement" title="Permanent link">&para;</a></h2>
+<p><strong>DISCRETIONARY ACCESS CONTROL</strong></p>
+<p>The information system enforces <mark><script>document.write(ssp.ac34);</script></mark> over defined subjects and objects where the policy specifies that a subject that has been granted access to information can do one or more of the following:  </p>
+<p>(a) Pass the information to any other subjects or objects;  </p>
+<p>(b) Grant its privileges to other subjects;  </p>
+<p>(c) Change security attributes on subjects, objects, the information system, or the information system&rsquo;s components;  </p>
+<p>(d) Choose the security attributes to be associated with newly created or revised objects; or  </p>
+<p>(e) Change the rules governing access control.  </p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. This control enhancement can operate in conjunction with <a href="ac.html#ac-3-access-enforcement">AC-3</a> (3). A subject that is constrained in its operation by policies governed by <a href="ac.html#ac-3-access-enforcement">AC-3</a> (3) is still able to operate under the less rigorous constraints of this control enhancement. Thus, while AC-3 (3) imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, <a href="ac.html#ac-3-access-enforcement">AC-3</a> (4) permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure that the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.  </p>
+</dd>
+</dl>
+<h2 id="ac-4-information-flow">AC-4 Information Flow<a class="headerlink" href="#ac-4-information-flow" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system enforces approved authorizations for controlling the flow of information within the system and between interconnected systems based on <mark><script>document.write(ssp.ac4);</script></mark>.  </p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to that information. Flow control restrictions include, for example, keeping export-controlled information from being transmitted in the clear to the Internet, blocking outside traffic that claims to be from within the organization, restricting web requests to the Internet that are not from the internal web proxy server, and limiting information transfers between organizations based on data structures and content. Transferring information between information systems representing different security domains with different security policies introduces risk that such transfers violate one or more domain security policies. In such situations, information owners/stewards provide guidance at designated policy enforcement points between interconnected systems. Organizations consider mandating specific architectural solutions when required to enforce specific security policies. Enforcement includes, for example: (i) prohibiting information transfers between interconnected systems (i.e., allowing access only); (ii) employing hardware mechanisms to enforce one-way information flows; and (iii) implementing trustworthy regrading mechanisms to reassign security attributes and security labels.  <br />Organizations commonly employ information flow control policies and enforcement mechanisms to control the flow of information between designated sources and destinations (e.g., networks, individuals, and devices) within information systems and between interconnected systems. Flow control is based on the characteristics of the information and/or the information path. Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet-filtering capability based on header information, or message-filtering capability based on message content (e.g., implementing key word searches or using document characteristics). Organizations also consider the trustworthiness of filtering/inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement. Control enhancements 3 through 22 primarily address cross-domain solution needs which focus on more advanced filtering techniques, in-depth analysis, and stronger flow enforcement mechanisms implemented in cross-domain products, for example, high-assurance guards. Such capabilities are generally not available in commercial off-the-shelf information technology products. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, AC-21, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, <a href="cm.html#cm-7-least-functionality">CM-7</a>, SA-8, <a href="sc.html#sc-2-application-partitioning">SC-2</a>, SC-5, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, SC-18.</p>
+</dd>
+</dl>
+<h2 id="ac-6-least-privilege">AC-6 Least Privilege<a class="headerlink" href="#ac-6-least-privilege" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark> employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizations employ least privilege for specific duties and information systems. The principle of least privilege is also applied to information system processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions/business functions. Organizations consider the creation of additional processes, roles, and information system accounts as necessary, to achieve least privilege. Organizations also apply least privilege to the development, implementation, and operation of organizational information systems. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="access_control.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, AC-5, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, <a href="cm.html#cm-7-least-functionality">CM-7</a>, PL-2.</p>
+</dd>
+</dl>
+<h2 id="ac-7-unsuccessful-logon-attempts">AC-7 Unsuccessful Logon Attempts<a class="headerlink" href="#ac-7-unsuccessful-logon-attempts" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system:  </p>
+<p>a. Enforces a limit of <mark><script>document.write(ssp.ac7a1);</script></mark> consecutive invalid logon attempts by a user during a <mark><script>document.write(ssp.ac7a2);</script></mark>; and  </p>
+<p>b. Automatically <mark><script>document.write(ssp.ac7b);</script></mark> when the maximum number of unsuccessful attempts is exceeded.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control applies regardless of whether the logon occurs via a local or network connection. Due to the potential for denial of service, automatic lockouts initiated by information systems are usually temporary and automatically release after a predetermined time period established by organizations. If a delay algorithm is selected, organizations may choose to employ different algorithms for different information system components based on the capabilities of those components. Responses to unsuccessful logon attempts may be implemented at both the operating system and the application levels. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, AC-9, AC-14, <a href="ia.html#ia-5-authenticator-management">IA-5</a>.</p>
+</dd>
+</dl>
+<h1 id="ac-11-session-lock">AC-11 SESSION LOCK<a class="headerlink" href="#ac-11-session-lock" title="Permanent link">&para;</a></h1>
+<p><strong>Control:</strong> The information system:  </p>
+<p>a. Prevents further access to the system by initiating a session lock after <mark><script>document.write(ssp.ac11a);</script></mark> of inactivity or upon receiving a request from a user; and</p>
+<p>b. Retains the session lock until the user reestablishes access using established identification and authentication procedures.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Session locks are temporary actions taken when users stop work and move away from the immediate vicinity of information systems but do not want to log out because of the temporary nature of their absences. Session locks are implemented where session activities can be determined. This is typically at the operating system level, but can also be at the application level. Session locks are not an acceptable substitute for logging out of information systems, for example, if organizations require users to log out at the end of workdays. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-7-unsuccessful-logon-attempts">AC-7</a>.</p>
+</dd>
+</dl>
+<h2 id="ac-111-session-lock">AC-11(1) Session Lock<a class="headerlink" href="#ac-111-session-lock" title="Permanent link">&para;</a></h2>
+<p><strong>PATTERN-HIDING DISPLAYS</strong></p>
+<p>The information system conceals, via the session lock, information previously visible on the display with a publicly viewable image.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Publicly viewable images can include static or dynamic images, for example, patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen, with the additional caveat that none of the images convey sensitive information.</p>
+</dd>
+</dl>
+<h1 id="ac-17-remote-access">AC-17 REMOTE ACCESS<a class="headerlink" href="#ac-17-remote-access" title="Permanent link">&para;</a></h1>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark>:</p>
+<p>a. Establishes and documents usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and</p>
+<p>b. Authorizes remote access to the information system prior to allowing such connections.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Remote access is access to organizational information systems by users (or processes acting on behalf of users) communicating through external networks (e.g., the Internet). Remote access methods include, for example, dial-up, broadband, and wireless. Organizations often employ encrypted virtual private networks (VPNs) to enhance confidentiality and integrity over remote connections. The use of encrypted VPNs does not make the access non-remote; however, the use of VPNs, when adequately provisioned with appropriate security controls (e.g., employing appropriate encryption techniques for confidentiality and integrity protection) may provide sufficient assurance to the organization that it can effectively treat such connections as internal networks. Still, VPN connections traverse external networks, and the encrypted VPN does not enhance the availability of remote connections. Also, VPNs with encrypted tunnels can affect the organizational capability to adequately monitor network communications traffic for malicious code. Remote access controls apply to information systems other than public web servers or systems designed for public access. This control addresses authorization prior to allowing remote access without specifying the formats for such authorization. While organizations may use interconnection security agreements to authorize remote access connections, such agreements are not required by this control. Enforcing access restrictions for remote connections is addressed in <a href="ac.html#ac-3-access-enforcement">AC-3</a>. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-18-wireless-access">AC-18</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, <a href="ac.html#ac-20-use-of-external-information-systems">AC-20</a>, CA-3, CA-7, <a href="cm.html#cm-8-information-system-component-inventory">CM-8</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, IA-3, IA-8, <a href="ma.html#maintenance">MA-4</a>, PE-17, PL-4, SC-10, <a href="si.html#si-4-information-system-monitoring">SI-4</a>.</p>
+</dd>
+</dl>
+<h2 id="ac-172-remote-access">AC-17(2) Remote Access<a class="headerlink" href="#ac-172-remote-access" title="Permanent link">&para;</a></h2>
+<p><strong>PROTECTION OF CONFIDENTIALITY / INTEGRITY USING ENCRYPTION</strong></p>
+<p>The information system implements cryptographic mechanisms to protect the confidentiality and integrity of remote access sessions.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>The encryption strength of mechanism is selected based on the security categorization of the information. </p>
+</dd>
+<dt><strong>Related controls</strong></dt>
+<dd>
+<p><a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, SC-12, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h1 id="ac-18-wireless-access">AC-18 WIRELESS ACCESS<a class="headerlink" href="#ac-18-wireless-access" title="Permanent link">&para;</a></h1>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark>:  </p>
+<p>a. Establishes usage restrictions, configuration/connection requirements, and implementation guidance for wireless access; and</p>
+<p>b. Authorizes wireless access to the information system prior to allowing such connections.
+Supplemental Guidance: Wireless technologies include, for example, microwave, packet radio (UHF/VHF), 802.11x, and Bluetooth. Wireless networks use authentication protocols (e.g., EAP/TLS, PEAP), which provide credential protection and mutual authentication. </p>
+<dl>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, CA-3, CA-7, <a href="cm.html#cm-8-information-system-component-inventory">CM-8</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, IA-3, IA-8, PL-4, <a href="si.html#si-4-information-system-monitoring">SI-4</a>.</p>
+</dd>
+</dl>
+<h2 id="ac-181-wireless-access">AC-18(1) Wireless Access<a class="headerlink" href="#ac-181-wireless-access" title="Permanent link">&para;</a></h2>
+<p><strong>AUTHENTICATION AND ENCRYPTION</strong></p>
+<p>The information system protects wireless access to the system using authentication of <mark><script>document.write(ssp.ac181);</script></mark> and encryption.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong></dt>
+<dd>
+<p>None </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h2 id="ac-19-access-control-for-mobile-devices">AC-19 Access Control for Mobile Devices<a class="headerlink" href="#ac-19-access-control-for-mobile-devices" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark>:</p>
+<p>a. Establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices; and</p>
+<p>b. Authorizes the connection of mobile devices to organizational information systems.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>A mobile device is a computing device that: (i) has a small form factor such that it can easily be carried by a single individual; (ii) is designed to operate without a physical connection (e.g., wirelessly transmit or receive information); (iii) possesses local, non-removable or removable data storage; and (iv) includes a self-contained power source. Mobile devices may also include voice communication capabilities, on-board sensors that allow the device to capture information, and/or built-in features for synchronizing local data with remote locations. Examples include smart phones, E-readers, and tablets. Mobile devices are typically associated with a single individual and the device is usually in close proximity to the individual; however, the degree of proximity can vary depending upon on the form factor and size of the device. The processing, storage, and transmission capability of the mobile device may be comparable to or merely a subset of desktop systems, depending upon the nature and intended purpose of the device. Due to the large variety of mobile devices with different technical characteristics and capabilities, organizational restrictions may vary for the different classes/types of such devices. Usage restrictions and specific implementation guidance for mobile devices include, for example, configuration management, device identification and authentication, implementation of mandatory protective software (e.g., malicious code detection, firewall), scanning devices for malicious code, updating virus protection software, scanning for critical software updates and patches, conducting primary operating system (and possibly other resident software) integrity checks, and disabling unnecessary hardware (e.g., wireless, infrared). Organizations are cautioned that the need to provide adequate security for mobile devices goes beyond the requirements in this control. Many safeguards and countermeasures for mobile devices are reflected in other security controls in the catalog allocated in the initial control baselines as starting points for the development of security plans and overlays using the tailoring process. There may also be some degree of overlap in the requirements articulated by the security controls within the different families of controls. <a href="ac.html#ac-20-use-of-external-information-systems">AC-20</a> addresses mobile devices that are not organization-controlled. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-7-unsuccessful-logon-attempts">AC-7</a>, <a href="ac.html#ac-18-wireless-access">AC-18</a>, <a href="ac.html#ac-20-use-of-external-information-systems">AC-20</a>, CA-9, <a href="cm.html#cm-2-baseline-configuration">CM-2</a>, <a href="ia.html#identification-and-authentication">IA-2</a>, IA-3, MP-2, <a href="mp.html#mp-4-media-storage">MP-4</a>, MP-5, PL-4, <a href="sc.html#sc-7-boundary-protection">SC-7</a>, SC-43, <a href="si.html#si-3-malicious-code-protection">SI-3</a>, <a href="si.html#si-4-information-system-monitoring">SI-4</a>.</p>
+</dd>
+</dl>
+<h1 id="ac-20-use-of-external-information-systems">AC-20 USE OF EXTERNAL INFORMATION SYSTEMS<a class="headerlink" href="#ac-20-use-of-external-information-systems" title="Permanent link">&para;</a></h1>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark> establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:</p>
+<p>a. Access the information system from external information systems; and</p>
+<p>b. Process, store, or transmit organization-controlled information using external information systems.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>External information systems are information systems or components of information systems that are outside of the authorization boundary established by organizations and for which organizations typically have no direct supervision and authority over the application of required security controls or the assessment of control effectiveness. External information systems include, for example: (i) personally owned information systems/devices (e.g., notebook computers, smart phones, tablets, personal digital assistants); (ii) privately owned computing and communications devices resident in commercial or public facilities (e.g., hotels, train stations, convention centers, shopping malls, or airports); (iii) information systems owned or controlled by nonfederal governmental organizations; and (iv) federal information systems that are not owned by, operated by, or under the direct supervision and authority of organizations. This control also addresses the use of external information systems for the processing, storage, or transmission of organizational information, including, for example, accessing cloud services (e.g., infrastructure as a service, platform as a service, or software as a service) from organizational information systems. </p>
+</dd>
+<dd>
+<p>For some external information systems (i.e., information systems operated by other federal agencies, including organizations subordinate to those agencies), the trust relationships that have been established between those organizations and the originating organization may be such, that no explicit terms and conditions are required. Information systems within these organizations would not be considered external. These situations occur when, for example, there are pre-existing sharing/trust agreements (either implicit or explicit) established between federal agencies or organizations subordinate to those agencies, or when such trust agreements are specified by applicable laws, Executive Orders, directives, or policies. Authorized individuals include, for example, organizational personnel, contractors, or other individuals with authorized access to organizational information systems and over which organizations have the authority to impose rules of behavior with regard to system access. Restrictions that organizations impose on authorized individuals need not be uniform, as those restrictions may vary depending upon the trust relationships between organizations. Therefore, organizations may choose to impose different security restrictions on contractors than on state, local, or tribal governments.</p>
+</dd>
+<dd>
+<p>This control does not apply to the use of external information systems to access public interfaces to organizational information systems (e.g., individuals accessing federal information through www.usa.gov). Organizations establish terms and conditions for the use of external information systems in accordance with organizational security policies and procedures. Terms and conditions address as a minimum: types of applications that can be accessed on organizational information systems from external information systems; and the highest security category of information that can be processed, stored, or transmitted on external information systems. If terms and conditions with the owners of external information systems cannot be established, organizations may impose restrictions on organizational personnel using those external systems. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-19-access-control-for-mobile-devices">AC-19</a>, CA-3, PL-4, SA-9.</p>
+</dd>
+</dl>
+<h2 id="ac-201-use-of-external-information-systems">AC-20(1) Use of External Information Systems<a class="headerlink" href="#ac-201-use-of-external-information-systems" title="Permanent link">&para;</a></h2>
+<p><strong>LIMITS ON AUTHORIZED USE</strong></p>
+<p><mark><script>document.write(cdc.name);</script></mark> permits authorized individuals to use an external information system to access the information system or to process, store, or transmit organization-controlled information only when <mark><script>document.write(cdc.dba);</script></mark>:</p>
+<p>(a) Verifies the implementation of required security controls on the external system as specified in <mark><script>document.write(cdc.dba);</script></mark>&lsquo;s information security policy and <a href="ac.html#ac-17-remote-access">security plan</a>; or</p>
+<p>(b) Retains approved information system connection or processing agreements with the organizational entity hosting the external information system.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control enhancement recognizes that there are circumstances where individuals using external information systems (e.g., contractors, coalition partners) need to access organizational information systems. In those situations, organizations need confidence that the external information systems contain the necessary security safeguards (i.e., security controls), so as not to compromise, damage, or otherwise harm organizational information systems. Verification that the required security controls have been implemented can be achieved, for example, by third-party, independent assessments, attestations, or other means, depending on the confidence level required by organizations. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p>CA-2.</p>
+</dd>
+</dl>
+<h2 id="ac-202-use-of-external-information-systems">AC-20(2) Use of External Information Systems<a class="headerlink" href="#ac-202-use-of-external-information-systems" title="Permanent link">&para;</a></h2>
+<p><strong>PORTABLE STORAGE DEVICES</strong></p>
+<p><mark><script>document.write(cdc.name);</script></mark> <mark><script>document.write(ssp.ac202);</script></mark> the use of organization-controlled portable storage devices by authorized individuals on external information systems.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Limits on the use of organization-controlled portable storage devices in external information systems include, for example, complete prohibition of the use of such devices or restrictions on how the devices may be used and under what conditions the devices may be used.</p>
+</dd>
+</dl>
+<h2 id="ac-22-publicly-accessible-content">AC-22 Publicly Accessible Content<a class="headerlink" href="#ac-22-publicly-accessible-content" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> <mark><script>document.write(cdc.name);</script></mark>:  </p>
+<p>a. Designates <a href="ac-22-doc.html">individuals authorized</a> to post information onto a publicly accessible information system;</p>
+<p>b. Trains authorized individuals to ensure that publicly accessible information does not contain nonpublic information;</p>
+<p>c. Reviews the proposed content of information prior to posting onto the publicly accessible information system to ensure that nonpublic information is not included; and</p>
+<p>d. Reviews the content on the publicly accessible information system for nonpublic information <mark><script>document.write(ssp.ac22d);</script></mark> and removes such information, if discovered.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>In accordance with federal laws, Executive Orders, directives, policies, regulations, standards, and/or guidance, the general public is not authorized access to nonpublic information (e.g., information protected under the Privacy Act and proprietary information). This control addresses information systems that are controlled by the organization and accessible to the general public, typically without identification or authentication. The posting of information on non-organization information systems is covered by organizational policy. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-4-information-flow">AC-4</a>, <a href="at.html#security-awareness-training">AT-2</a>, AT-3, AU-13.</p>
+</dd>
+</dl>
+<div style="page-break-after:always;"></div>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Access Controls<br>Source: <a href="ac.txt" rel="nofollow">ac.txt</a><br>Metadata: <a href="md/ac.md.htm" rel="nofollow">ac.md.htm</a><br>Author: Larry Chaffin<br>Reviewer: none<br>Status: draft<br>Date: 2015-10-11</p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="au.html#au-2-audits-events">AU-2</a>, <a href="au.html#au-8-time-stamps">AU-8</a>, AU-12, SI-11.</p>
+</dd>
+</dl>
+<h2 id="au-6-1-audit-review-analysis-and-reporting">AU-6 (1) Audit Review, Analysis, and Reporting<a class="headerlink" href="#au-6-1-audit-review-analysis-and-reporting" title="Permanent link">&para;</a></h2>
+<p><strong>PROCESS INTEGRATION</strong></p>
+<p>The organization employs automated mechanisms to integrate audit review, analysis, and reporting processes to support organizational processes for investigation and response to suspicious activities.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Organizational processes benefiting from integrated audit review, analysis, and reporting include, for example, incident response, continuous monitoring, contingency planning, and Inspector General audits. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p>AU-12, PM-7.</p>
+</dd>
+</dl>
+<h2 id="au-7-audit-reduction-and-report-generation">AU-7 Audit Reduction and Report Generation<a class="headerlink" href="#au-7-audit-reduction-and-report-generation" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system provides an audit reduction and report generation capability that:  </p>
+<p>a. Supports on-demand audit review, analysis, and reporting requirements and after-the-fact investigations of security incidents; and</p>
+<p>b. Does not alter the original content or time ordering of audit records.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Audit reduction is a process that manipulates collected audit information and organizes such information in a summary format that is more meaningful to analysts. Audit reduction and report generation capabilities do not always emanate from the same information system or from the same organizational entities conducting auditing activities. Audit reduction capability can include, for example, modern data mining techniques with advanced data filters to identify anomalous behavior in audit records. The report generation capability provided by the information system can generate customizable reports. Time ordering of audit records can be a significant issue if the granularity of the timestamp in the record is insufficient. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p><a href="au.html#au-6-1-audit-review-analysis-and-reporting">AU-6</a>.</p>
+</dd>
+</dl>
+<h2 id="au-8-time-stamps">AU-8 Time Stamps<a class="headerlink" href="#au-8-time-stamps" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system:  </p>
+<p>a. Uses internal system clocks to generate time stamps for audit records; and</p>
+<p>b. Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets <span id="highlight"><script>document.write(ssp.au8b);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Time stamps generated by the information system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between information system clocks and reference clocks, for example, clocks synchronizing within hundreds of milliseconds or within tens of milliseconds. Organizations may define different time granularities for different system components. Time service can also be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="au.html#au-3-content-of-audit-records">AU-3</a>, AU-12.</p>
+</dd>
+</dl>
+<h2 id="au-9-protection-of-audit-information">AU-9 Protection of Audit Information<a class="headerlink" href="#au-9-protection-of-audit-information" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system protects audit information and audit tools from unauthorized access, modification, and deletion.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. This control focuses on technical protection of audit information. Physical protection of audit information is addressed by media protection controls and physical and environmental protection controls. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, MP-2, <a href="mp.html#mp-4-media-storage">MP-4</a>, <a href="pe.html#pe-2-physical-access-authorizations">PE-2</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, PE-6.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Audit & Accountability<br>Source: <a href="au.txt" rel="nofollow">au.txt</a><br>Metadata: <a href="md/au.md.htm" rel="nofollow">au.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</dd>
+</dl>
+<h2 id="sc-7-boundary-protection">SC-7 Boundary Protection<a class="headerlink" href="#sc-7-boundary-protection" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system:</p>
+<p>a. Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system;</p>
+<p>b. Implements subnetworks for publicly accessible system components that are <span id="highlight"><script>document.write(ssp.sc7b);</script></span>. separated from internal organizational networks; and</p>
+<p>c. Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Managed interfaces include, for example, gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational information systems includes, for example, restricting external web traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses. Organizations consider the shared nature of commercial telecommunications services in the implementation of security controls associated with the use of such services. Commercial telecommunications services are commonly based on network components and consolidated management systems shared by all attached commercial customers, and may also include third party-provided access lines and other service elements. Such transmission services may represent sources of increased risk despite contract security provisions. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-4-information-flow">AC-4</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, CA-3, <a href="cm.html#cm-7-least-functionality">CM-7</a>, CP-8, <a href="ir.html#ir-4-incident-handling">IR-4</a>, RA-3, SC-5, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h2 id="sc-8-transmission-confidentiality-and-integrity">SC-8 Transmission Confidentiality And Integrity<a class="headerlink" href="#sc-8-transmission-confidentiality-and-integrity" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system protects the <span id="highlight"><script>document.write(ssp.sc8);</script></span>. of transmitted information.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control applies to both internal and external networks and all types of information system components from which information can be transmitted (e.g., servers, mobile devices, notebook computers, printers, copiers, scanners, facsimile machines). Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and/or integrity of organizational information can be accomplished by physical means (e.g., by employing protected distribution systems) or by logical means (e.g., employing encryption techniques). Organizations relying on commercial providers offering transmission services as commodity services rather than as fully dedicated services (i.e., services which can be highly specialized to individual customer needs), may find it difficult to obtain the necessary assurances regarding the implementation of needed security controls for transmission confidentiality/integrity. In such situations, organizations determine what types of confidentiality/integrity services are available in standard, commercial telecommunication service packages. If it is infeasible or impractical to obtain the necessary security controls and assurances of control effectiveness through appropriate contracting vehicles, organizations implement appropriate compensating security controls or explicitly accept the additional risk. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-17-remote-access">AC-17</a>, PE-4.</p>
+</dd>
+</dl>
+<h2 id="sc-81-transmission-confidentiality-and-integrity">SC-8(1) Transmission Confidentiality And Integrity<a class="headerlink" href="#sc-81-transmission-confidentiality-and-integrity" title="Permanent link">&para;</a></h2>
+<p><strong>Cryptographic or Alternate Physical Protection</strong></p>
+<p>The information system implements cryptographic mechanisms to <span id="highlight"><script>document.write(ssp.sc81x1);</script></span> during transmission unless otherwise protected by <span id="highlight"><script>document.write(ssp.sc81x2);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Encrypting information for transmission protects information from unauthorized disclosure and modification. Cryptographic mechanisms implemented to protect information integrity include, for example, cryptographic hash functions which have common application in digital signatures, checksums, and message authentication codes. Alternative physical security safeguards include, for example, protected distribution systems. </p>
+</dd>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p><a href="sc.html#sc-13-cryptographic-protection">SC-13</a>.</p>
+</dd>
+</dl>
+<h2 id="sc-13-cryptographic-protection">SC-13 Cryptographic Protection<a class="headerlink" href="#sc-13-cryptographic-protection" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system implements <span id="highlight"><script>document.write(ssp.sc13);</script></span> in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>Cryptography can be employed to support a variety of security solutions including, for example, the protection of classified and Controlled Unclassified Information, the provision of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances for such information but lack the necessary formal access approvals. Cryptography can also be used to support random number generation and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. This control does not impose any requirements on organizations to use cryptography. However, if cryptography is required based on the selection of other security controls, organizations define each type of cryptographic use and the type of cryptography required (e.g., protection of classified information: NSA-approved cryptography; provision of digital signatures: FIPS-validated cryptography). </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-2-account-management">AC-2</a>, <a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-7-unsuccessful-logon-attempts">AC-7</a>, <a href="ac.html#ac-17-remote-access">AC-17</a>, <a href="ac.html#ac-18-wireless-access">AC-18</a>, <a href="au.html#au-9-protection-of-audit-information">AU-9</a>, AU-10, CM-11, <a href="cp.html#cp-9-information-system-backup">CP-9</a>, IA-3, IA-7, <a href="ma.html#maintenance">MA-4</a>, MP-2, <a href="mp.html#mp-4-media-storage">MP-4</a>, MP-5, SA-4, <a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, SC-12, <a href="sc.html#sc-28-protection-of-information-at-rest">SC-28</a>, SI-7.</p>
+</dd>
+</dl>
+<h2 id="sc-15-collaborative-computing-devices">SC-15 Collaborative Computing Devices<a class="headerlink" href="#sc-15-collaborative-computing-devices" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system:</p>
+<p>a. Prohibits remote activation of collaborative computing devices with the following exceptions: <span id="highlight"><script>document.write(ssp.sc15a);</script></span>; and</p>
+<p>b. Provides an explicit indication of use to users physically present at the devices.
+Supplemental Guidance: Collaborative computing devices include, for example, networked white boards, cameras, and microphones. Explicit indication of use includes, for example, signals to users when collaborative computing devices are activated. </p>
+<dl>
+<dt><strong>Related control</strong> </dt>
+<dd>
+<p>AC-21.</p>
+</dd>
+</dl>
+<h2 id="sc-28-protection-of-information-at-rest">SC-28 Protection of Information at Rest<a class="headerlink" href="#sc-28-protection-of-information-at-rest" title="Permanent link">&para;</a></h2>
+<p><strong>Control:</strong> The information system protects the <span id="highlight"><script>document.write(ssp.sc28);</script></span>.</p>
+<dl>
+<dt><strong>Supplemental Guidance</strong> </dt>
+<dd>
+<p>This control addresses the confidentiality and integrity of information at rest and covers user information and system information. Information at rest refers to the state of information when it is located on storage devices as specific components of information systems. System-related information requiring protection includes, for example, configurations or rule sets for firewalls, gateways, intrusion detection/prevention systems, filtering routers, and authenticator content. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing Write-Once-Read-Many (WORM) technologies. Organizations may also employ other security controls including, for example, secure off-line storage in lieu of online storage when adequate protection of information at rest cannot otherwise be achieved and/or continuous monitoring to identify malicious code at rest. </p>
+</dd>
+<dt><strong>Related controls</strong> </dt>
+<dd>
+<p><a href="ac.html#ac-3-access-enforcement">AC-3</a>, <a href="ac.html#ac-6-least-privilege">AC-6</a>, CA-7, CM-3, CM-5, <a href="cm.html#cm-6-configuration-settings">CM-6</a>, <a href="pe.html#pe-3-physical-access-control">PE-3</a>, <a href="sc.html#sc-8-transmission-confidentiality-and-integrity">SC-8</a>, <a href="sc.html#sc-13-cryptographic-protection">SC-13</a>, <a href="si.html#si-3-malicious-code-protection">SI-3</a>, SI-7.</p>
+</dd>
+</dl>
+<p><div style="page-break-after:always;"></div></p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: System and Communications Protection<br>Source: <a href="sc.txt" rel="nofollow">sc.txt</a><br>Metadata: <a href="md/sc.md.htm" rel="nofollow">sc.md.htm</a><br>Author: <br>Reviewer: <br>Status: <br>Date: </p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<ul>
+<li>Conducts backups of information system documentation including security-related documentation</li>
+</ul>
+<h2 id="ia-4-identifier-management">IA-4 Identifier Management<a class="headerlink" href="#ia-4-identifier-management" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, or device identifier</li>
+</ul>
+<h2 id="ir-5-incident-monitoring">IR-5 Incident Monitoring<a class="headerlink" href="#ir-5-incident-monitoring" title="Permanent link">&para;</a></h2>
+<ul>
+<li>tracks and documents information system security incidents</li>
+</ul>
+<h2 id="ma-4-maintenance">MA-4 Maintenance<a class="headerlink" href="#ma-4-maintenance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>documented in the security plan for the information system
+Maintains records for nonlocal maintenance and diagnostic activities</li>
+</ul>
+<h2 id="ma-5-maintenance-personnel">MA-5 Maintenance Personnel<a class="headerlink" href="#ma-5-maintenance-personnel" title="Permanent link">&para;</a></h2>
+<ul>
+<li>maintains a list of authorized maintenance organizations or personnel</li>
+</ul>
+<h2 id="pe-2-physical-access-authorizations">PE-2 Physical Access Authorizations<a class="headerlink" href="#pe-2-physical-access-authorizations" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Develops, approves, and maintains a list of individuals with authorized access to the facility where the information system resides</li>
+</ul>
+<h2 id="pe-3-physical-access-control">PE-3 Physical Access Control<a class="headerlink" href="#pe-3-physical-access-control" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Maintains physical access audit logs</li>
+</ul>
+<h2 id="ra-5-risk-assessment">RA-5 Risk Assessment<a class="headerlink" href="#ra-5-risk-assessment" title="Permanent link">&para;</a></h2>
+<p>Formatting checklists and test procedures</p>
+ </main>
+<!--Scripsit--><footer>
+<!--Scripsit--><div class="row">
+<!--Scripsit--><modal id="open">
+<!--Scripsit--><div>
+<!--Scripsit--><div class="title">Metadata
+<!--Scripsit--><a href="#close" class="close">&times;</a>
+<!--Scripsit--></div>
+<!--Scripsit--><p>Title: Documentation<br>Source: <a href="index-doc.txt" rel="nofollow">index-doc.txt</a><br>Metadata: <a href="md/index-doc.md.htm" rel="nofollow">index-doc.md.htm</a><br>Author: Larry Chaffin<br>Reviewer: <br>Status: draft<br>Date: 10/11/2015</p>
+<!--Scripsit--></div>
+<!--Scripsit--></modal>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+<!--Scripsit--><div class="c4 o8">
+<!--Scripsit--><cui><script>document.write(scripsit.copyright);</script></cui>
+<!--Scripsit--></div>
+<!--Scripsit--></div>
+<!--Scripsit--></footer>
+</body>
+</html>

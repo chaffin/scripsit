@@ -22,7 +22,7 @@ echo "<script src=\"json/ssp.json\"></script>" >> $filename
 echo "<script src=\"json/cdc.json\"></script>" >> $filename
 echo "</head>" >> $filename
 echo "<body>" >> $filename
-for i in index.html pm.html ra.html pe.html cp.html cm.html ma.html si.html mp.html ir.html at.html ia.html ac.html au.html sc.html doc_index.html doc_ac-2.html;
+for i in index.html pm.html ra.html pe.html cp.html cm.html ma.html si.html mp.html ir.html at.html ia.html ac.html au.html sc.html index-doc.html ac-2-doc.html ac-22-doc.html;
 do tail -n +55 $i >> $filename;done
 # clean up some html tags
 grep -v "</div> <" $filename > $clean  

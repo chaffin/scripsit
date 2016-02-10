@@ -7,8 +7,9 @@ date:        2015-10-11
 ## Descriptive
 Metadata files describe how, when, and by whom the set of data was collected.
 
-Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted.
 
+
+Metadata describes how and when and by whom a particular set of data was collected, and how the data is formatted.
 
 ## Structural 
 How the data is formatted.

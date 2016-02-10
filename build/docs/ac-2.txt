@@ -12,7 +12,7 @@ prev_url:    ac-1.html
 
 ## AC-2 Account Management
 
-**Control:**<mark><script>document.write(ssp.ac2.control.toUpperCase());</script>&mdash;<script>document.write(ssp.org.name);</script></mark>:
+**<script>document.write(ssp.ac2.control.toUpperCase());</script>&nbsp;Control**
 
 a. Identifies and selects the following types of information system accounts to support organizational missions/business functions: <mark><script>document.write(ssp.ac2.a.control);</script></mark>;  
 

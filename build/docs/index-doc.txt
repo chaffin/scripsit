@@ -76,5 +76,5 @@ RA-5 Risk Assessment
 ----
 Formatting checklists and test procedures
 
-[at-1]:doc_ac-2.html
-[ac-22]:doc_ac-22.html
+[at-1]:ac-2-doc.html
+[ac-22]:ac-22-doc.html
