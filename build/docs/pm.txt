@@ -13,7 +13,7 @@ prev_url:   sc.html
 PM-10 Security Authorization Process 
 ------------------------------------
 
-**Control:** <mark><script>document.write(cdc.name);</script></mark>:
+**Control:** <mark><script>document.write(org.name);</script></mark>:
 
 a. Manages (i.e., documents, tracks, and reports) the security state of organizational information systems and the environments in which those systems operate through security authorization processes;
 
@@ -26,8 +26,8 @@ c. Fully integrates the security authorization processes into an organization-wi
 <tr><th>Name</th><th>Title</th><th>Responsibility</th>
 </tr>
 <script>
-for (i in cdc.role) {
-  document.write("<tr><td>Name:&nbsp;" + (cdc.role[i].firstname) + "&nbsp;" + (cdc.role[i].lastname) + "<br>Phone:&nbsp;" + (cdc.role[i].office) + "<br>Email:&nbsp;" + (cdc.role[i].email) + "</td><td>" + (cdc.role[i].title) + "</td><td>" + (cdc.role[i].responsible) + "</td></tr>");
+for (i in org.role) {
+  document.write("<tr><td>Name:&nbsp;" + (org.role[i].firstname) + "&nbsp;" + (org.role[i].lastname) + "<br>Phone:&nbsp;" + (org.role[i].office) + "<br>Email:&nbsp;" + (org.role[i].email) + "</td><td>" + (org.role[i].title) + "</td><td>" + (org.role[i].responsible) + "</td></tr>");
 }
 </script>
 </table>
